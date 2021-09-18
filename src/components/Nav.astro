@@ -1,0 +1,37 @@
+---
+const navItems = [
+  {
+    name: 'posts',
+    path: '/posts'
+  },
+  {
+    name: 'uses',
+    path: '/uses'
+  }
+]
+
+---
+
+<nav>
+  <ul class="nav-list">
+    {navItems.map(item => {
+      return (
+        <li class="nav-list-item">
+          <a href={item.path}>
+            {item.name}
+          </a>
+        </li>
+      )
+    })}
+  </ul>
+</nav>
+
+<style>
+  .nav-list {
+    display: flex;
+  }
+
+  .nav-list-item {
+    margin-left: 1rem;
+  }
+</style>

@@ -1,0 +1,116 @@
+---
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoePrints } from '@fortawesome/free-solid-svg-icons'
+
+import { categoryIcons, monthOfYear } from '../common.js'
+
+export interface Props {
+  post: any;
+}
+
+const { post } = Astro.props;
+const date = new Date(post.publishDate)
+const displayDate = `${monthOfYear[date.getMonth()]}. ${date.getDate()}, ${date.getFullYear()}`
+---
+<article class="post-preview">
+  <div class="post-category-icon-wrapper">
+    <FontAwesomeIcon 
+      icon={categoryIcons[post.category]} 
+      class="post-category-icon" 
+    />
+  </div>
+  <div class="post-content">
+    <header>
+      <a href={post.url}>
+        <h1 class="title">{post.title}</h1>
+      </a>
+      <span class="publish-date">{displayDate}</span>
+    </header>
+    <main>
+      <p>{post.description}</p>
+      <a href={post.url} class="read-more">
+        Read more
+        <FontAwesomeIcon icon={faShoePrints} class="footprints" />
+      </a>
+    </main>
+  </div>
+</article>
+
+<style>
+.content :global(main > * + *) {
+  margin-top: 1rem;
+}
+
+.post-preview {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 4px solid var(--theme-divider);
+}
+
+.post-content {
+  width: 100%;
+}
+
+.post-category-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  width: 20%;
+}
+
+.post-category-icon {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.title,
+.author,
+.publish-date {
+  margin: 0;
+}
+
+.publish-date,
+.author {
+  color: var(--theme-text-lighter);
+}
+
+.author {
+  font-size: 1.25rem;
+}
+
+.publish-date {
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--theme-text);
+}
+
+.read-more {
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+}
+
+.footprints {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+</style>
