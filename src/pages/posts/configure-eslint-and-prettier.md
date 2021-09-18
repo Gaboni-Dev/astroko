@@ -4,6 +4,9 @@ publishDate: "2020-02-09"
 layout: "../../layouts/BlogPost.astro"
 description: "Learn how to use ESLint and Prettier to enforce code conventions and formatting."
 category: "javascript"
+tags:
+  - "eslint"
+  - "prettier"
 ---
 
 Let's face it. Development is hard.

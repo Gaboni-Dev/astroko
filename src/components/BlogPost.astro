@@ -9,13 +9,12 @@ export interface Props {
   heroImage: string;
 }
 
-const { title, author, publishDate, heroImage, alt } = Astro.props;
+const { title, author, publishDate } = Astro.props;
 ---
 
 <div class="layout">
   <article class="content">
     <header>
-      {heroImage && <img width="720" height="420" class="hero-image" loading="lazy" src={heroImage} alt={alt} />}
       <p class="publish-date">{publishDate}</p>
       <h1 class="title">{title}</h1>
       <Author name="@ryan_c_harris" href="https://twitter.com/ryan_c_harris" />
@@ -45,7 +44,7 @@ const { title, author, publishDate, heroImage, alt } = Astro.props;
 }
 
 .content {
-  margin-bottom: 8rem;
+  margin-bottom: 3rem;
 }
 
 .content :global(main > * + *) {

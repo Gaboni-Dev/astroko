@@ -9,8 +9,8 @@ export interface Props {
 }
 
 const { post } = Astro.props;
-const date = new Date(post.publishDate)
-const displayDate = `${monthOfYear[date.getMonth()]}. ${date.getDate()}, ${date.getFullYear()}`
+const tags = post?.tags;
+const category = post?.category;
 ---
 <article class="post-preview">
   <div class="post-category-icon-wrapper">
@@ -24,7 +24,16 @@ const displayDate = `${monthOfYear[date.getMonth()]}. ${date.getDate()}, ${date.
       <a href={post.url}>
         <h1 class="title">{post.title}</h1>
       </a>
-      <span class="publish-date">{displayDate}</span>
+      {tags || category && (
+        <ul class="tag-list">
+          {category && (
+            <li key="category" class="tag">{category}</li>
+          )}
+          {tags && tags.map((tag, idx) => {
+            return <li key={`tag-${idx}`} class="tag">{tag}</li>
+          })}
+        </ul>
+      )}
     </header>
     <main>
       <p>{post.description}</p>
@@ -49,8 +58,27 @@ const displayDate = `${monthOfYear[date.getMonth()]}. ${date.getDate()}, ${date.
   border-bottom: 4px solid var(--theme-divider);
 }
 
+.post-preview:last-of-type {
+  border-bottom: none;
+}
+
 .post-content {
   width: 100%;
+}
+
+.tag-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.tag:before {
+  content: "#";
+}
+
+.tag {
+  margin-right: 12px;
 }
 
 .post-category-icon-wrapper {
@@ -77,23 +105,8 @@ main {
   flex-direction: column;
 }
 
-.title,
-.author,
-.publish-date {
+.title {
   margin: 0;
-}
-
-.publish-date,
-.author {
-  color: var(--theme-text-lighter);
-}
-
-.author {
-  font-size: 1.25rem;
-}
-
-.publish-date {
-  font-size: 1rem;
 }
 
 .title {
