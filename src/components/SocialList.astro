@@ -1,0 +1,60 @@
+---
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faTwitter, faTwitch } from '@fortawesome/free-brands-svg-icons';
+
+const socialLinks = {
+    github: 'https://github.com/ryancharris',
+    twitch: 'https://www.twitch.tv/ryan_c_harris',
+    twitter: 'https://twitter.com/ryan_c_harris',
+}
+
+interface Props {
+  size: 'reg' | 'lg'
+}
+
+const { size } = Astro.props;
+
+const lgClassName = size === 'lg' ? 'social-icons-list-lg' : '';
+---
+<ul class={`social-icons-list ${lgClassName}`}>
+  <li class="social-icon-list-item">
+    <a href={socialLinks.github}>
+      <FontAwesomeIcon icon={faGithub} class="social-icon" />
+    </a>
+  </li>
+  <li class="social-icon-list-item">
+    <a href={socialLinks.twitter}>
+      <FontAwesomeIcon icon={faTwitter} class="social-icon" />
+    </a>
+  </li>
+  <li class="social-icon-list-item">
+    <a href={socialLinks.twitch}>
+      <FontAwesomeIcon icon={faTwitch} class="social-icon" />
+    </a>
+  </li>
+</ul>
+
+<style>
+  .social-icons-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-icon-list-item {
+    margin: 0;
+    padding: 4px 8px;
+  }
+
+  .social-icon {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+
+  .social-icons-list-lg .social-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+</style>

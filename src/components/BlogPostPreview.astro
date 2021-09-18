@@ -2,6 +2,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoePrints } from '@fortawesome/free-solid-svg-icons'
 
+import TagList from './TagList.astro'
+
 import { categoryIcons, monthOfYear } from '../common.js'
 
 export interface Props {
@@ -9,8 +11,8 @@ export interface Props {
 }
 
 const { post } = Astro.props;
-const tags = post?.tags;
-const category = post?.category;
+const tags = post?.tags ? post.tags : [];
+const category = post?.category ? post.category : [];
 ---
 <article class="post-preview">
   <div class="post-category-icon-wrapper">
@@ -24,21 +26,14 @@ const category = post?.category;
       <a href={post.url}>
         <h1 class="title">{post.title}</h1>
       </a>
-      {tags || category && (
-        <ul class="tag-list">
-          {category && (
-            <li key="category" class="tag">{category}</li>
-          )}
-          {tags && tags.map((tag, idx) => {
-            return <li key={`tag-${idx}`} class="tag">{tag}</li>
-          })}
-        </ul>
+      {(category || tags) && (
+        <TagList category={category} tags={tags} />
       )}
     </header>
     <main>
       <p>{post.description}</p>
       <a href={post.url} class="read-more">
-        Read more
+        Read
         <FontAwesomeIcon icon={faShoePrints} class="footprints" />
       </a>
     </main>
@@ -66,26 +61,11 @@ const category = post?.category;
   width: 100%;
 }
 
-.tag-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-}
-
-.tag:before {
-  content: "#";
-}
-
-.tag {
-  margin-right: 12px;
-}
-
 .post-category-icon-wrapper {
   display: flex;
-  justify-content: center;
-  padding-top: 1.75rem;
-  width: 20%;
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+  width: 15%;
 }
 
 .post-category-icon {

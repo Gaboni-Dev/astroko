@@ -1,25 +1,17 @@
 ---
-// Component Imports
+import Author from '../components/Author.astro'
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import BlogPostPreview from '../components/BlogPostPreview.astro';
 import BlogFooter from '../components/BlogFooter.astro';
 
-
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
 let title = 'ryanharris.dev';
 let description = 'software engineer.';
 let permalink = 'https://ryanharris.dev/';
 
-// Data Fetching: List all Markdown posts in the repo.
 let allPosts = Astro.fetchContent('./posts/*.md');
 allPosts = allPosts.sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
 
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 <html lang="en">
   <head>
@@ -52,21 +44,6 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate) - new Date(a.publishD
       .content :global(main > * + *) {
         margin-top: 1rem;
       }
-
-      .intro {
-        padding-bottom: 4rem;
-        margin-bottom: 2rem;
-        border-bottom: 4px solid var(--theme-divider);
-      }
-
-      .intro > * {
-        margin: 0;
-      }
-
-      .latest {
-        font-size: 2.5rem;
-        font-weight: 700;
-      }
     </style>
   </head>
 
@@ -74,6 +51,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate) - new Date(a.publishD
     <Header />
     <div class="layout">
       <article class="content">
+        <Author />
         
       </article>
     </div>

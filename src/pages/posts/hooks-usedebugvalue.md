@@ -4,6 +4,8 @@ publishDate: "2020-08-10"
 layout: "../../layouts/BlogPost.astro"
 description: "useDebugValue is a hook aimed at helping developers troubleshoot the React applications they're building."
 category: "react"
+tags:
+  - "hooks"
 ---
 
 ### #TIL

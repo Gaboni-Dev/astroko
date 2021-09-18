@@ -4,6 +4,9 @@ publishDate: "2020-01-19"
 layout: "../../layouts/BlogPost.astro"
 description: "If you use more than one GitHub account on the same machine, configuring multiple SSH keys will make authenticating with different repos much easier."
 category: "oss"
+tags:
+  - "git"
+  - "github"
 ---
 
 During the onboarding process for my new job at [Fauna](https://www.fauna.com), I was tasked with setting up my local development environment. However, since Fauna devs use work-specific GitHub accounts, a new challenge presented itself during the process: managing SSH keys and identities for multiple accounts.

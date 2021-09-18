@@ -4,6 +4,8 @@ publishDate: "2020-03-13"
 layout: "../../layouts/BlogPost.astro"
 description: "useRef can be used to directly interact with the browser's DOM or store and update values without causing re-renders like useState."
 category: "react"
+tags:
+  - "hooks"
 ---
 
 ### What are refs?

@@ -4,6 +4,9 @@ publishDate: "2020-08-08"
 layout: "../../layouts/BlogPost.astro"
 description: "Check out the setup I used to patch Discord audio into my Twitch livestream."
 category: "streaming"
+tags:
+  - "discord"
+  - "twitch"
 ---
 
 While I usually stream on [Twitch](https://twitch.tv/ryan_c_harris), I have recently been doing streams in [Reactadelphia's](https://www.meetup.com/Reactadelphia/) [Discord server](https://discord.gg/rTnVTp4). The idea of interacting with viewers via voice chat was quite appealing; however, the downside is that it lacks the visibility of Twitch -- folks not in your Discord server can't join in on the fun.

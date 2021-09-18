@@ -4,6 +4,8 @@ publishDate: "2019-12-11"
 layout: "../../layouts/BlogPost.astro"
 description: "Once you're up and running with OBS, it's helpful to begin organizing your inputs and assets into separate scenes."
 category: "streaming"
+tags:
+  - "obs"
 ---
 
 ### What are Scenes?

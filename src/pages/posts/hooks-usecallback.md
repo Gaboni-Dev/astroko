@@ -4,6 +4,8 @@ publishDate: "2020-04-21"
 layout: "../../layouts/BlogPost.astro"
 description: "useCallback is similar to useMemo but returns a memoized function, not a memoized value."
 category: "react"
+tags:
+  - "hooks"
 ---
 
 ### Before you proceed...

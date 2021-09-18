@@ -4,6 +4,8 @@ publishDate: "2020-05-18"
 layout: "../../layouts/BlogPost.astro"
 description: "useReducer provides an alternate way to store component state beyond useState. It is especially useful for storing complex data structures and/or related values."
 category: "react"
+tags:
+  - "hooks"
 ---
 
 ### An update on state

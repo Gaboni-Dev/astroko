@@ -4,6 +4,8 @@ publishDate: "2020-03-16"
 layout: "../../layouts/BlogPost.astro"
 description: "useContext provides an easy way to provide data from parent to child without having to 'prop drill'."
 category: "react"
+tags:
+  - "hooks"
 ---
 
 ### Putting things in Context

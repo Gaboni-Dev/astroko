@@ -1,0 +1,38 @@
+---
+export interface Props {
+  category: string;
+  tags: string[]
+}
+
+const { category, tags } = Astro.props;
+---
+
+<div>
+  <ul class="tag-list">
+    {category && (
+      <li key="category" class="tag">{category}</li>
+    )}
+    {tags && (
+      tags.map((tag, idx) => {
+        return <li key={`tag-${idx}`} class="tag">{tag}</li>;
+      })
+    )}
+  </ul>
+</div>
+
+<style>
+  .tag-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  .tag:before {
+    content: "#";
+  }
+
+  .tag {
+    margin-right: 12px;
+  }
+</style>

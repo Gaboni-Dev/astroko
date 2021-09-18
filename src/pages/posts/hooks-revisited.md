@@ -4,6 +4,8 @@ publishDate: "2020-02-16"
 layout: "../../layouts/BlogPost.astro"
 description: "This series is a holistic look at React's hooks API and how they each work."
 category: "react"
+tags:
+  - "hooks"
 ---
 
 > Hooks are functions that let you “hook into” React state and lifecycle features from function components [[React docs]](https://reactjs.org/docs/hooks-overview.html#but-what-is-a-hook)

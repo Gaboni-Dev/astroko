@@ -4,6 +4,8 @@ publishDate: "2020-03-02"
 layout: "../../layouts/BlogPost.astro"
 description: "useLayoutEffect works exactly the same way useEffect does except it fires prior to the DOM's initial paint."
 category: "react"
+tags:
+  - "hooks"
 ---
 
 Last time, we learned about the <a href="/posts/hooks-useeffect">useEffect hook</a>, how it works and when to use it. If you have not read that article yet, I **strongly suggest you go back and do so before proceeding any further**. Much of what we will discuss below will be about the similarities and differences between useEffect and useLayoutEffect, which may not make much sense without having a good grip on the former.

@@ -1,16 +1,57 @@
 ---
-export interface Props {
-  name: string;
-  href: string;
-}
+import SocialList from './SocialList.astro'
 
-const { name, href } = Astro.props;
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 ---
 <style>
   .author {
-    margin-bottom: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+
+  .author-bio {
+    width: 75%;
+  }
+
+  .author-name {
+    margin: 0;
+  }
+
+  .author-desc {
+    margin-bottom: 2rem;
+  }
+
+  .social-list-wrapper {
+    margin-left: -8px;
+  }
+
+  .author-picture {
+    margin-left: 36px;
+    width: 25%;
+  }
+
+  .profile {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
   }
 </style>
+
 <div class="author">
-  <p><a href={href}>{name}</a></p>
+  <div class="author-bio">
+    <h1 class="author-name">ryan harris</h1>
+    <p class="author-desc">software engineer | creator</p>
+    <p class="author-desc">
+      Pellentesque eros nibh, egestas eget nulla vel, dapibus condimentum neque. Fusce ac turpis ornare, viverra nunc in, pharetra libero. Cras accumsan ut ex quis porta. Donec magna diam, pretium a molestie in, hendrerit nec lectus. Ut dui dui, consequat ut urna vitae, pharetra molestie ex
+    </p>
+    <div class="social-list-wrapper">
+      <SocialList size="lg" />
+    </div>
+  </div>
+  <div class="author-picture">
+    <img src="./profile.jpeg" class="profile" />
+  </div>
 </div>
+

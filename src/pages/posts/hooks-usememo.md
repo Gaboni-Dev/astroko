@@ -4,6 +4,8 @@ publishDate: "2020-03-24"
 layout: "../../layouts/BlogPost.astro"
 description: "useMemo allows you to avoid recomputing expensive values by leveraging memoization under the hood."
 category: "react"
+tags:
+  - "hooks"
 ---
 
 Up until this point in <a href="/posts/hooks-revisited">the series</a>, I have been generally familiar with the hooks we've covered and have used them before at work. It wasn't until I recently started working in a new codebase that I came across [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo). Not understanding how it worked or how to debug it was a large part of why I chose to write this series in the first place.

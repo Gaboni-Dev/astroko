@@ -4,6 +4,8 @@ publishDate: "2019-06-27"
 layout: "../../layouts/BlogPost.astro"
 description: "Learn how to get started with Vue from the perspective of a React developer."
 category: "react"
+tags:
+  - "vue"
 ---
 
 For frontend developers, JavaScript frameworks have become increasingly important due to how fundamentally they change the way we approach building our applications. While not everyone uses them professional, or at all, the development community sure loves to talk about them. Unfortunately, these discussions often devolve into a diatribe about Framework X being better than Framework Y, or Framework Z not being “real JavaScript.”

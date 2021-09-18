@@ -1,26 +1,9 @@
 ---
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
-
-const socialLinks = {
-    github: 'https://github.com/ryancharris',
-    twitter: 'https://twitter.com/ryan_c_harris',
-}
+import SocialList from './SocialList.astro'
 --- 
 
 <footer>
-  <ul class="social-icons-list">
-    <li class="social-icon-list-item">
-      <a href={socialLinks.github}>
-        <FontAwesomeIcon icon={faGithub} class="social-icon" />
-      </a>
-    </li>
-    <li class="social-icon-list-item">
-      <a href={socialLinks.twitter}>
-        <FontAwesomeIcon icon={faTwitter} class="social-icon" />
-      </a>
-    </li>
-  </ul>
+  <SocialList size="reg" />
 </footer>
 
 <style>
@@ -29,22 +12,5 @@ const socialLinks = {
     flex-direction: row;
     justify-content: center;
     margin-bottom: 2rem;
-  }
-
-  .social-icons-list {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-
-  .social-icon-list-item {
-    margin: 0;
-    padding: 4px 8px;
-  }
-
-  .social-icon {
-    height: 1.75rem;
-    width: 1.75rem;
   }
 </style>

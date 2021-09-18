@@ -4,6 +4,8 @@ publishDate: "2019-10-27"
 layout: "../../layouts/BlogPost.astro"
 description: "See how I built a new search UI with React context and refs."
 category: "react"
+tags:
+  - "ui"
 ---
 
 Recently, the product team at my company discovered the majority of our users were not utilizing filters when using our search interface.

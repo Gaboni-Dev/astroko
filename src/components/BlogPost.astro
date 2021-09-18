@@ -1,23 +1,26 @@
 ---
-import Author from './Author.astro';
 import "prismjs/themes/prism-okaidia.css"
+
+import Author from './Author.astro';
+import TagList from './TagList.astro';
 
 export interface Props {
   title: string;
   author: string;
-  publishDate: string;
-  heroImage: string;
+  category?: string;
+  tags?: string[];
 }
 
-const { title, author, publishDate } = Astro.props;
+const { title, author, category, tags } = Astro.props;
 ---
 
 <div class="layout">
   <article class="content">
     <header>
-      <p class="publish-date">{publishDate}</p>
       <h1 class="title">{title}</h1>
-      <Author name="@ryan_c_harris" href="https://twitter.com/ryan_c_harris" />
+      {(category || tags) && (
+        <TagList category={category} tags={tags} />
+      )}
     </header>
     <main>
       <slot />
@@ -62,7 +65,7 @@ header {
   align-items: center;
   justify-content: center;
 
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   margin-bottom: 2rem;
   border-bottom: 4px solid var(--theme-divider);
 }
