@@ -1,0 +1,33 @@
+.ModeToggle {
+  margin-left: 12px;
+}
+
+.toggle-icon {
+  max-height: 100%;
+}
+
+.toggle-icon.moon path {
+  fill: lightsteelblue;
+}
+
+.toggle-icon.sun path {
+  fill: orange;
+}
+
+.react-toggle.mode-toggle:hover .react-toggle-track {
+  background-color: skyblue;
+}
+
+.react-toggle--checked.mode-toggle:hover .react-toggle-track {
+  background-color: lightslategray;
+}
+
+.react-toggle.mode-toggle .react-toggle-track,
+.react-toggle.mode-toggle .react-toggle-track:hover {
+  background-color: skyblue;
+}
+
+.react-toggle--checked.mode-toggle .react-toggle-track,
+.react-toggle--checked.mode-toggle .react-toggle-track:hover {
+  background-color: lightslategray;
+}
