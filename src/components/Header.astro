@@ -1,15 +1,13 @@
 ---
 import Nav from './Nav.astro'
 
-const path = Astro.request.url.pathname;
-const isIndexPage = path === '/';
 ---
 
 <header class="layout">
   <article>
     <h1>
       <a href="/">
-        {isIndexPage ? <span>home</span> : <span>ryan harris</span>}
+        <span>ryan harris</span>
       </a>
     </h1>
     <Nav />

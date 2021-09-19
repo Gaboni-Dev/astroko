@@ -50,6 +50,12 @@ const featuredPosts = allPosts.filter(post => {
         margin-bottom: 3rem;
       }
 
+      .tile-header-wrapper {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+      }
+
       .tile-header {
         margin-bottom: 2rem;
       }
@@ -64,7 +70,10 @@ const featuredPosts = allPosts.filter(post => {
           <Author />
         </section>
         <section class="tile">
-          <h3 class="tile-header">featured posts</h3>
+          <div class="tile-header-wrapper">
+            <h3 class="tile-header">featured posts</h3>
+            <a href="/posts">all posts ></a>
+          </div>
           {featuredPosts.map(p => <BlogPostPreview post={p} />)}
         </section>
       </article>
