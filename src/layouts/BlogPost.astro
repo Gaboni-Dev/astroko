@@ -5,7 +5,7 @@ import BlogPost from '../components/BlogPost.astro';
 import BlogFooter from '../components/BlogFooter.astro';
 
 const {content} = Astro.props;
-const {title, description, publishDate, author, heroImage, permalink, alt, category, tags} = content;
+const {title, description, publishDate, author, heroImage, permalink, alt, category, tags, attachments} = content;
 
 ---
 <html lang={ content.lang || 'en' }>

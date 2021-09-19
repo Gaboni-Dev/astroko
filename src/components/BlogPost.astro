@@ -7,8 +7,8 @@ import TagList from './TagList.astro';
 export interface Props {
   title: string;
   author: string;
-  category?: string;
-  tags?: string[];
+  category: string;
+  tags: string[];
 }
 
 const { title, author, category, tags } = Astro.props;
@@ -36,6 +36,10 @@ const { title, author, category, tags } = Astro.props;
   margin-top: 2rem;
   margin-bottom: 4rem;
   max-width: 1280px;
+}
+
+.content {
+  margin-top: 2rem;
 }
 
 @media (max-width: 50em) {
