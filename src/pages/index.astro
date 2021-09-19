@@ -10,7 +10,9 @@ let description = 'software engineer.';
 let permalink = 'https://ryanharris.dev/';
 
 let allPosts = Astro.fetchContent('./posts/*.md');
-allPosts = allPosts.sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
+const featuredPosts = allPosts.filter(post => {
+  return post.featured;
+})
 
 ---
 <html lang="en">
@@ -38,11 +40,18 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate) - new Date(a.publishD
 
       .content {
         margin-top: 4rem;
-        margin-bottom: 4rem;
       }
 
       .content :global(main > * + *) {
         margin-top: 1rem;
+      }
+
+      .tile {
+        margin-bottom: 3rem;
+      }
+
+      .tile-header {
+        margin-bottom: 3rem;
       }
     </style>
   </head>
@@ -51,8 +60,13 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate) - new Date(a.publishD
     <Header />
     <div class="layout">
       <article class="content">
-        <Author />
-        
+        <section class="tile">
+          <Author />
+        </section>
+        <section class="tile">
+          <h3 class="tile-header">featured posts</h3>
+          {featuredPosts.map(p => <BlogPostPreview post={p} />)}
+        </section>
       </article>
     </div>
     <BlogFooter />

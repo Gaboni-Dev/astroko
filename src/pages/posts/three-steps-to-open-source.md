@@ -4,6 +4,7 @@ publishDate: "2019-03-09"
 layout: "../../layouts/BlogPost.astro"
 description: "Contributing to open-source projects during my career transition taught me a lot about being a developer. Here's how you can get started with OSS."
 category: "oss"
+featured: true
 ---
 
 Before becoming a developer, I spent a decade working in film and television, so when I first started transitioning into tech, I spent a lot of time networking, going to Meetups and having coffee with other developers. I was primarily interested in **finding out what I needed to know to become employable and how I could go about learning those skills**. I heard a few answers consistently: do online tutorials, build your portfolio and contribute to open source projects.
