@@ -5,7 +5,7 @@ import Nav from './Nav.astro'
 ---
 
 <header class="layout">
-  <article>
+  <article class="header-wrapper">
     <h1>
       <a href="/">
         <span>ryan harris</span>
@@ -24,7 +24,8 @@ header {
 
 article {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -39,5 +40,12 @@ h1 {
 h1 a {
   text-decoration: none;
   display: inline-flex;
+}
+
+@media (min-width: 50em) {
+  article {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 </style>

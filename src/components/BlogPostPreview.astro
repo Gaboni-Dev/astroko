@@ -64,14 +64,13 @@ const category = post?.category ? post.category : [];
 .post-category-icon-wrapper {
   display: flex;
   justify-content: flex-start;
-  margin-top: 1.5rem;
-  width: 12%;
-  padding-left: 12px;
+  margin-top: 1rem;
+  width: 36px;
 }
 
 .post-category-icon {
-  max-width: 32px;
-  max-height: 32px;
+  max-width: 24px;
+  max-height: 24px;
 }
 
 header {
@@ -106,5 +105,11 @@ main {
   width: 16px;
   height: 16px;
   margin-right: 8px;
+}
+
+@media (min-width: 50em) {
+  .post-category-icon-wrapper {
+    width: 48px;
+  }
 }
 </style>
