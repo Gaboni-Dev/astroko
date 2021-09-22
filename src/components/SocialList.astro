@@ -16,29 +16,36 @@ const { size } = Astro.props;
 
 const lgClassName = size === 'lg' ? 'social-icons-list-lg' : '';
 ---
-<ul class={`social-icons-list ${lgClassName}`}>
-  <li class="social-icon-list-item">
-    <a href={socialLinks.github} target="_blank">
-      <FontAwesomeIcon icon={faGithub} class="social-icon" />
-    </a>
-  </li>
-  <li class="social-icon-list-item">
-    <a href={socialLinks.twitter} target="_blank">
-      <FontAwesomeIcon icon={faTwitter} class="social-icon" />
-    </a>
-  </li>
-  <li class="social-icon-list-item">
-    <a href={socialLinks.twitch} target="_blank">
-      <FontAwesomeIcon icon={faTwitch} class="social-icon" />
-    </a>
-  </li>
-</ul>
+<div class="social-list-wrapper">
+  <ul class={`social-icons-list ${lgClassName}`}>
+    <li class="social-icon-list-item">
+      <a href={socialLinks.github} target="_blank">
+        <FontAwesomeIcon icon={faGithub} class="social-icon" />
+      </a>
+    </li>
+    <li class="social-icon-list-item">
+      <a href={socialLinks.twitter} target="_blank">
+        <FontAwesomeIcon icon={faTwitter} class="social-icon" />
+      </a>
+    </li>
+    <li class="social-icon-list-item">
+      <a href={socialLinks.twitch} target="_blank">
+        <FontAwesomeIcon icon={faTwitch} class="social-icon" />
+      </a>
+    </li>
+  </ul>
+</div>
 
 <style>
+  .social-list-wrapper {
+    margin-bottom: 12px;
+    margin-left: -8px;
+  }
+
   .social-icons-list {
     list-style: none;
     display: flex;
-    margin: 0 0 24px;
+    margin: 0;
     padding: 0;
   }
 
