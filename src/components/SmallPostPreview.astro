@@ -1,0 +1,109 @@
+---
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoePrints } from '@fortawesome/free-solid-svg-icons'
+
+import TagList from './TagList.astro'
+
+import { categoryIcons, monthOfYear } from '../common.js'
+
+export interface Props {
+  post: any;
+}
+
+const { post } = Astro.props;
+const tags = post?.tags ? post.tags : [];
+const category = post?.category ? post.category : [];
+---
+<article>
+  <a href={post.url}>
+    <div class="post-preview">
+      <div class="post-category-icon-wrapper">
+        <FontAwesomeIcon 
+          icon={categoryIcons[post.category]} 
+          class="post-category-icon" 
+        />
+      </div>
+      <div class="post-content">
+        <header>
+          <h1 class="title">{post.title}</h1>
+        </header>
+      </div>
+    </div>
+  </a>
+</article>
+
+<style>
+.content :global(main > * + *) {
+  margin-top: 1rem;
+}
+
+article {
+  margin-bottom: 2rem;
+}
+
+article:last-of-type {
+  margin-bottom: 0;
+}
+
+.post-preview {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2rem;
+  justify-content: flex-start;
+  border-bottom: 4px solid var(--theme-divider);
+}
+
+.post-content {
+  width: 100%;
+}
+
+.post-category-icon-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  width: 36px;
+}
+
+.post-category-icon {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 0;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--theme-text);
+}
+
+.read-more {
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+}
+
+.footprints {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+@media (min-width: 50em) {
+  .post-category-icon-wrapper {
+    width: 48px;
+  }
+}
+</style>

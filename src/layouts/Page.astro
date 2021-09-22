@@ -70,12 +70,14 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate) - new Date(a.publishD
   </head>
 
   <body>
-    <Header />
-    <div class="layout">
-      <article class="content">
-        <slot />
-      </article>
-    </div>
-    <BlogFooter />
+    <main>
+      <Header />
+      <div class="layout">
+        <article class="content">
+          <slot />
+        </article>
+      </div>
+      <BlogFooter />
+    </main>
   </body>
 </html>

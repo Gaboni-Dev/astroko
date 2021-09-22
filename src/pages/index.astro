@@ -2,7 +2,7 @@
 import Author from '../components/Author.astro'
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
-import BlogPostPreview from '../components/BlogPostPreview.astro';
+import SmallPostPreview from '../components/SmallPostPreview.astro';
 import BlogFooter from '../components/BlogFooter.astro';
 
 let title = 'ryanharris.dev';
@@ -47,16 +47,17 @@ const featuredPosts = allPosts.filter(post => {
       }
 
       .tile {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
+      }
+
+      .tile:last-of-type {
+        margin-bottom: 0;
       }
 
       .tile-header-wrapper {
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-      }
-
-      .tile-header {
         margin-bottom: 2rem;
       }
     </style>
@@ -74,7 +75,7 @@ const featuredPosts = allPosts.filter(post => {
             <h3 class="tile-header">featured posts</h3>
             <a href="/posts">all posts ></a>
           </div>
-          {featuredPosts.map(p => <BlogPostPreview post={p} />)}
+          {featuredPosts.map(p => <SmallPostPreview post={p} />)}
         </section>
       </article>
     </div>
