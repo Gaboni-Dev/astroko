@@ -1,0 +1,19 @@
+.tags-wrapper {
+  margin-bottom: 2rem;
+}
+
+.tag-button {
+  border: 1px solid var(--color-orange);
+  background-color: var(--color-orange);
+  border-radius: 4px;
+  color: var(--color-white);
+  cursor: pointer;
+  margin-right: 12px;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+}
+
+.tag-button.tag-button--active {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
