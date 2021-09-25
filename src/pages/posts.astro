@@ -9,7 +9,7 @@ let description = 'software engineer.';
 let permalink = 'https://ryanharris.dev/';
 
 let allPosts = [];
-allPosts = Astro.fetchContent('./posts/*.md');
+allPosts = await Astro.fetchContent('./posts/*.md');
 allPosts = allPosts.sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
 
 ---

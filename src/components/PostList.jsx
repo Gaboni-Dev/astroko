@@ -33,6 +33,7 @@ function PostList(props) {
             tagFilter === tag ? "tag-button tag-button--active" : "tag-button";
           return (
             <button
+              key={tag}
               value={tag}
               className={className}
               onClick={(e) => {
@@ -58,7 +59,7 @@ function PostList(props) {
             return post.tags.includes(tagFilter);
           })
           .map((post) => (
-            <BlogPostPreview post={post} />
+            <BlogPostPreview key={post.title} post={post} />
           ))}
       </section>
     </>
