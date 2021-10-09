@@ -2,7 +2,7 @@
 import SocialList from './SocialList.astro'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faCentercode, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 ---
 <style>
   .author {
@@ -17,10 +17,12 @@ import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
   .author-name {
     margin: 0;
+    text-align: center;
   }
 
   .author-desc {
     margin-bottom: 0.75rem;
+    text-align: center;
   }
 
   .author-picture {
@@ -45,6 +47,11 @@ import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
     .author-bio {
       width: 75%;
+    }
+
+    .author-name,
+    .author-desc {
+      text-align: left;
     }
 
     .author-picture {

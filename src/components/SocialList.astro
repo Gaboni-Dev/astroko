@@ -1,6 +1,6 @@
 ---
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faTwitter, faTwitch } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faTwitter, faTwitch, faCentercode } from '@fortawesome/free-brands-svg-icons';
 
 const socialLinks = {
     github: 'https://github.com/ryancharris',
@@ -47,6 +47,7 @@ const lgClassName = size === 'lg' ? 'social-icons-list-lg' : '';
     display: flex;
     margin: 0;
     padding: 0;
+    justify-content: center;
   }
 
   .social-icon-list-item {
@@ -63,5 +64,11 @@ const lgClassName = size === 'lg' ? 'social-icons-list-lg' : '';
     height: 2rem;
     width: 2rem;
   }
+
+@media (min-width: 50em) {
+  .social-icons-list {
+    justify-content: flex-start;
+  }
+}
 
 </style>
