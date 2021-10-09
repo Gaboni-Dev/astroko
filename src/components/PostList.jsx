@@ -6,8 +6,6 @@ import "/PostList.css";
 function PostList(props) {
   const [posts, setPosts] = useState(props.posts);
   const [tagFilter, setTagFilter] = useState("");
-  console.log("tagFilter", tagFilter);
-  console.log("posts", posts.length);
 
   const getTagList = (posts) => {
     const tags = [];
