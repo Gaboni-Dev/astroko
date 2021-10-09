@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Toggle from "react-toggle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
@@ -9,15 +9,6 @@ import "../../public/toggle.css";
 
 function ModeToggle() {
   const [darkMode, setDarkMode] = useDarkMode();
-  console.log("darkMode", darkMode);
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList = "theme-dark";
-    } else {
-      document.documentElement.classList = "";
-    }
-  }, [darkMode]);
 
   return (
     <div className="ModeToggle">

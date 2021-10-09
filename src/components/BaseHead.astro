@@ -40,3 +40,19 @@ const { title, description, permalink } = Astro.props;
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;700&display=swap">
+
+<script>
+  const flag = JSON.parse(window.localStorage.getItem("dark-mode-enabled"))
+  const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
+
+  {/* If the user has never been here but prefers dark theme */}
+  if (!flag && prefersDarkMode) {
+    window.document.documentElement.classList.add("theme-dark")
+  }
+
+  {/* If the user has been here and previously set a theme */}
+  if (flag && Boolean(flag)) {
+    window.document.documentElement.classList.add("theme-dark")
+  }
+
+</script>

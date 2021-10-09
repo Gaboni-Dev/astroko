@@ -11,7 +11,6 @@ let permalink = 'https://ryanharris.dev/';
 let allPosts = [];
 allPosts = await Astro.fetchContent('./posts/*.md');
 allPosts = allPosts.sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
-
 ---
 <html lang="en">
   <head>

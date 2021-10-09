@@ -17,12 +17,12 @@ export default function useDarkMode() {
   // Fire off effect that add/removes dark mode class
   useEffect(
     () => {
-      const className = "theme-dark";
       const element = window.document.documentElement;
+
       if (enabled) {
-        element.classList.add(className);
+        element.classList.add("theme-dark");
       } else {
-        element.classList.remove(className);
+        element.classList.remove("theme-dark");
       }
     },
     [enabled] // Only re-call effect when value changes
