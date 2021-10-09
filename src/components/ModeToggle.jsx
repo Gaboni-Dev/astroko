@@ -2,33 +2,28 @@ import { useEffect, useState } from "react";
 import Toggle from "react-toggle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import useDarkMode from "../hooks/useDarkMode";
 
 import "react-toggle/style.css";
 import "../../public/toggle.css";
 
 function ModeToggle() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  console.log("isDarkMode", isDarkMode);
-
-  const setMode = () => {
-    setIsDarkMode((e) => {
-      setIsDarkMode(!e);
-    });
-  };
+  const [darkMode, setDarkMode] = useDarkMode();
+  console.log("darkMode", darkMode);
 
   useEffect(() => {
-    if (isDarkMode) {
+    if (darkMode) {
       document.documentElement.classList = "theme-dark";
     } else {
       document.documentElement.classList = "";
     }
-  });
+  }, [darkMode]);
 
   return (
     <div className="ModeToggle">
       <label>
         <Toggle
-          defaultChecked={isDarkMode}
+          defaultChecked={darkMode}
           className="mode-toggle"
           icons={{
             checked: (
@@ -38,7 +33,9 @@ function ModeToggle() {
               <FontAwesomeIcon icon={faSun} className="toggle-icon sun" />
             ),
           }}
-          onChange={setMode}
+          onChange={(e) => {
+            setDarkMode(!darkMode);
+          }}
         />
       </label>
     </div>
