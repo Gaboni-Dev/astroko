@@ -2,17 +2,23 @@
 import Author from '../components/Author.astro'
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
-import SmallPostPreview from '../components/SmallPostPreview.astro';
+import SmallPostPreview from '../components/SmallPostPreview.jsx';
 import BlogFooter from '../components/BlogFooter.astro';
+import FeaturedVideos from '../components/FeaturedVideos.jsx'
 
 let title = 'ryanharris.dev';
 let description = 'software engineer.';
 let permalink = 'https://ryanharris.dev/';
+const eggheadProfileURL = 'https://app.egghead.io/instructors/ryan-harris';
 
 let allPosts = Astro.fetchContent('./posts/*.md');
 const featuredPosts = allPosts.filter(post => {
   return post.featured;
 })
+
+const eggheadResponse = await fetch('https://app.egghead.io/api/v1/playlists/react-hooks-revisited-abce.json');
+const eggheadJSON = await eggheadResponse.json();
+const hookVideos = eggheadJSON.items.slice(0, 3);
 
 ---
 <html lang="en">
@@ -75,6 +81,13 @@ const featuredPosts = allPosts.filter(post => {
       <article class="content">
         <section class="tile">
           <Author />
+        </section>
+        <section class="tile">
+          <div class="tile-header-wrapper">
+            <h3 class="tile-header">featured videos</h3>
+            <a href={eggheadProfileURL}>all videos ></a>
+          </div>
+          <FeaturedVideos client:load videos={hookVideos} />
         </section>
         <section class="tile">
           <div class="tile-header-wrapper">
