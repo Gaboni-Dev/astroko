@@ -11,8 +11,6 @@ function PostList(props) {
   const [tagFilter, setTagFilter] = useState("");
 
   const handleTextInput = (e) => {
-    if (!e.target.value) return null;
-
     const sanitizedInput = e.target.value.trim().toLowerCase();
     setSearchTerm(sanitizedInput);
   };
