@@ -42,16 +42,24 @@ const { title, description, permalink } = Astro.props;
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;700&display=swap">
 
 <script>
-  const flag = JSON.parse(window.localStorage.getItem("dark-mode-enabled"))
+  const hasItemInLocalStorage = Boolean(window.localStorage.getItem("dark-mode-enabled"))
+  const darkModeEnabled = JSON.parse(window.localStorage.getItem("dark-mode-enabled"))
   const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
 
   {/* If the user has never been here but prefers dark theme */}
-  if (!flag && prefersDarkMode) {
+  if (!hasItemInLocalStorage && prefersDarkMode) {
+    console.log('new user, prefers dark mode')
     window.document.documentElement.classList.add("theme-dark")
   }
 
+if (!hasItemInLocalStorage && !prefersDarkMode) {
+    console.log('new user, prefers dark mode')
+    window.document.documentElement.classList.remove("theme-dark")
+  }
+
   {/* If the user has been here and previously set a theme */}
-  if (flag && Boolean(flag)) {
+  if (Boolean(darkModeEnabled)) {
+    console.log('previous user, dark mode enabled')
     window.document.documentElement.classList.add("theme-dark")
   }
 
