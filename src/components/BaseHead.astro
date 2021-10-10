@@ -52,11 +52,6 @@ const { title, description, permalink } = Astro.props;
     window.document.documentElement.classList.add("theme-dark")
   }
 
-if (!hasItemInLocalStorage && !prefersDarkMode) {
-    console.log('new user, prefers dark mode')
-    window.document.documentElement.classList.remove("theme-dark")
-  }
-
   {/* If the user has been here and previously set a theme */}
   if (Boolean(darkModeEnabled)) {
     console.log('previous user, dark mode enabled')

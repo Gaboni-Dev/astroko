@@ -1,11 +1,21 @@
 import React, { useState } from "react";
 import BlogPostPreview from "./BlogPostPreview.jsx";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 import "/PostList.css";
 
 function PostList(props) {
   const [posts, setPosts] = useState(props.posts);
+  const [searchTerm, setSearchTerm] = useState("");
   const [tagFilter, setTagFilter] = useState("");
+
+  const handleTextInput = (e) => {
+    if (!e.target.value) return null;
+
+    const sanitizedInput = e.target.value.trim().toLowerCase();
+    setSearchTerm(sanitizedInput);
+  };
 
   const getTagList = (posts) => {
     const tags = [];
@@ -25,6 +35,17 @@ function PostList(props) {
 
   return (
     <>
+      <section className="search-wrapper">
+        <input
+          type="search"
+          name="search"
+          id="search"
+          onChange={handleTextInput}
+          placeholder="Search"
+          className="search-input"
+        />
+        <FontAwesomeIcon icon={faSearch} className="search-icon" />
+      </section>
       <section className="tags-wrapper">
         {getTagList(posts).map((tag) => {
           const className =
@@ -55,6 +76,20 @@ function PostList(props) {
             if (!post.tags) return false;
 
             return post.tags.includes(tagFilter);
+          })
+          .filter((post) => {
+            if (searchTerm === "") return true;
+
+            const { title, description } = post;
+
+            if (
+              title.toLowerCase().includes(searchTerm) ||
+              description.toLowerCase().includes(searchTerm)
+            ) {
+              return true;
+            }
+
+            return false;
           })
           .map((post) => (
             <BlogPostPreview key={post.title} post={post} />
