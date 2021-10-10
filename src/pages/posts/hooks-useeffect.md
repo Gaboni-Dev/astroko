@@ -1,6 +1,7 @@
 ---
 title: "Hooks Revisited: useEffect"
 publishDate: "2020-02-26"
+published: true
 layout: "../../layouts/BlogPost.astro"
 description: "useEffect is one of the most commonly used hooks and is used for things like fetching data, setting up event listeners and manipulating the DOM."
 category: "react"

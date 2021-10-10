@@ -1,6 +1,7 @@
 ---
 title: "Notes on 'Mastering emacs'"
 publishDate: "2020-08-09"
+published: true
 layout: "../../layouts/BlogPost.astro"
 description: "Raw notes from a 'Mastering emacs' bookclub I participated in."
 category: "general"

@@ -1,6 +1,7 @@
 ---
 title: "How to configure ESLint and Prettier to work together"
 publishDate: "2020-02-09"
+published: true
 layout: "../../layouts/BlogPost.astro"
 description: "Learn how to use ESLint and Prettier to enforce code conventions and formatting."
 category: "javascript"

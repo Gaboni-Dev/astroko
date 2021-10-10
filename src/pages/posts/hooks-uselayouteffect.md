@@ -1,6 +1,7 @@
 ---
 title: "Hooks Revisited: useLayoutEffect"
 publishDate: "2020-03-02"
+published: true
 layout: "../../layouts/BlogPost.astro"
 description: "useLayoutEffect works exactly the same way useEffect does except it fires prior to the DOM's initial paint."
 category: "react"

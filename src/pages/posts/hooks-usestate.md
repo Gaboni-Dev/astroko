@@ -1,6 +1,7 @@
 ---
 title: "Hooks Revisited: useState"
 publishDate: "2020-02-17"
+published: true
 layout: "../../layouts/BlogPost.astro"
 description: "As the name suggests, the useState hook is used for storing component state."
 category: "react"

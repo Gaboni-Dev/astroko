@@ -1,6 +1,7 @@
 ---
 title: "Redoing search UI with React Context and refs"
 publishDate: "2019-10-27"
+published: true
 layout: "../../layouts/BlogPost.astro"
 description: "See how I built a new search UI with React context and refs."
 category: "react"

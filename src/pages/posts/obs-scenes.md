@@ -1,6 +1,7 @@
 ---
 title: "How to setup your OBS scenes"
 publishDate: "2019-12-11"
+published: true
 layout: "../../layouts/BlogPost.astro"
 description: "Once you're up and running with OBS, it's helpful to begin organizing your inputs and assets into separate scenes."
 category: "streaming"

@@ -1,6 +1,7 @@
 ---
 title: "Planning my digital garden"
 publishDate: "2020-08-11"
+published: true
 layout: "../../layouts/BlogPost.astro"
 description: "Thoughts about redesigning my website and turning it into a digital garden."
 category: "garden"

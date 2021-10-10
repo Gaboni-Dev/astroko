@@ -1,6 +1,7 @@
 ---
 title: "What the heck is JSX?"
 publishDate: "2018-12-08"
+published: true
 layout: "../../layouts/BlogPost.astro"
 description: "JSX is a syntax extension for JavaScript and is widely used in frontend frameworks like React."
 category: "react"

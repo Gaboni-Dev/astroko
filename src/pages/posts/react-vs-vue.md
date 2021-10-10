@@ -1,6 +1,7 @@
 ---
 title: "5 Vue tips for React developers"
 publishDate: "2019-06-27"
+published: true
 layout: "../../layouts/BlogPost.astro"
 description: "Learn how to get started with Vue from the perspective of a React developer."
 category: "react"

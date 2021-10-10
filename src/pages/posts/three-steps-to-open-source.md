@@ -1,6 +1,7 @@
 ---
 title: "3 Steps to Getting Started with Open Source"
 publishDate: "2019-03-09"
+published: true
 layout: "../../layouts/BlogPost.astro"
 description: "Contributing to open-source projects during my career transition taught me a lot about being a developer. Here's how you can get started with OSS."
 category: "oss"

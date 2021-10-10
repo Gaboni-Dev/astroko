@@ -1,6 +1,7 @@
 ---
 title: "Managing SSH keys and identities for GitHub"
 publishDate: "2020-01-19"
+published: true
 layout: "../../layouts/BlogPost.astro"
 description: "If you use more than one GitHub account on the same machine, configuring multiple SSH keys will make authenticating with different repos much easier."
 category: "oss"

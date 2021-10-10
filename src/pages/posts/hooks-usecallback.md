@@ -1,6 +1,7 @@
 ---
 title: "Hooks Revisited: useCallback"
 publishDate: "2020-04-21"
+published: true
 layout: "../../layouts/BlogPost.astro"
 description: "useCallback is similar to useMemo but returns a memoized function, not a memoized value."
 category: "react"

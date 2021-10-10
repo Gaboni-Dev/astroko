@@ -1,6 +1,7 @@
 ---
 title: "Hooks Revisited: useRef"
 publishDate: "2020-03-13"
+published: true
 layout: "../../layouts/BlogPost.astro"
 description: "useRef can be used to directly interact with the browser's DOM or store and update values without causing re-renders like useState."
 category: "react"

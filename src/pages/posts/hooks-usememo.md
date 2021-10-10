@@ -1,6 +1,7 @@
 ---
 title: "Hooks Revisited: useMemo"
 publishDate: "2020-03-24"
+published: true
 layout: "../../layouts/BlogPost.astro"
 description: "useMemo allows you to avoid recomputing expensive values by leveraging memoization under the hood."
 category: "react"

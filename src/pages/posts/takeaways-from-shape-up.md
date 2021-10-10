@@ -1,6 +1,7 @@
 ---
 title: "Takeaways from 'Shape Up'"
 publishDate: "2020-08-17"
+published: true
 layout: "../../layouts/BlogPost.astro"
 description: "My thoughts on 'Take Shape' by Ryan Singer."
 category: "books"

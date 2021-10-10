@@ -1,6 +1,7 @@
 ---
 title: "Add voice chat to your Twitch stream"
 publishDate: "2020-08-08"
+published: true
 layout: "../../layouts/BlogPost.astro"
 description: "Check out the setup I used to patch Discord audio into my Twitch livestream."
 category: "streaming"
