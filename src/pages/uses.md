@@ -9,13 +9,12 @@ layout: "../layouts/Page.astro"
 
 ### Software
 
-- [Doom emacs](https://github.com/hlissner/doom-emacs)
-- [Alacritty](https://github.com/alacritty/alacritty)
 - [VS Code](https://visualstudio.com/)
 - [iTerm 2](https://iterm2.com/)
 - [Insomnia](https://insomnia.rest/)
-- [Spectacle](https://www.spectacleapp.com/)
-- [Rocket](https://matthewpalmer.net/rocket/)
+- [Doom emacs](https://github.com/hlissner/doom-emacs)
+- [Alacritty](https://github.com/alacritty/alacritty)
+- [Rectangle](https://rectangleapp.com/)
 - [Figma](https://www.figma.com/)
 
 ### Streaming setup
@@ -29,7 +28,7 @@ layout: "../layouts/Page.astro"
 
 ### Accessories
 
-- [Vava USB-C dock](https://www.amazon.com/VAVA-Adapter-Delivery-Ethernet-Laptops-Grey/dp/B079GSMZ7G)
+- [CalDigit TS3 Plus](https://www.caldigit.com/ts3-plus/)
 - [Seagate 2TB SSD](https://www.amazon.com/gp/product/B07MY4TJCM)
 - [Logitech C922 Pro webcam](https://www.logitech.com/en-us/products/webcams/c922-pro-stream-webcam.960-001087.html)
 - [Ducky One 2 SF](https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=5800)
