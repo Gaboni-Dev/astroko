@@ -1,5 +1,5 @@
 ---
-title: "Web3 wallet safety: how not to get rekt"
+title: "How to not get rekt: web3 wallet safety"
 publishDate: "2021-12-01"
 published: true
 layout: "../../layouts/BlogPost.astro"
