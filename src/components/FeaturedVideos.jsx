@@ -12,7 +12,7 @@ function FeaturedVideos({ videos }) {
     };
     return <SmallPostPreview post={postObj} />;
   });
-  return <>{videoList}</>;
+  return <>{videos ? videoList : null}</>;
 }
 
 export default FeaturedVideos;
