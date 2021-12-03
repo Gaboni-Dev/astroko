@@ -1,14 +1,14 @@
-import React from "react";
-import { ethers } from "ethers";
+// import React from "react";
+// import { ethers } from "ethers";
 
-function Wallet() {
-  console.log(ethers);
+// function Wallet() {
+//   console.log(ethers);
 
-  return (
-    <div>
-      <h1>Wallet</h1>
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       <h1>Wallet</h1>
+//     </div>
+//   );
+// }
 
-export default Wallet;
+// export default Wallet;
