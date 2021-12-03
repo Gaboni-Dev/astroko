@@ -15,19 +15,19 @@ function SmallPostPreview(props) {
   return (
     <article>
       <a href={post.url}>
-        <div class="post-preview">
-          <div class="post-category-icon-wrapper">
+        <div className="post-preview">
+          <div className="post-category-icon-wrapper">
             <FontAwesomeIcon
               icon={categoryIcons[post.category]}
-              class="post-category-icon"
+              className="post-category-icon"
             />
           </div>
-          <div class="post-content">
+          <div className="post-content">
             <header>
-              <h1 class="title">{post.title}</h1>
+              <h1 className="title">{post.title}</h1>
             </header>
           </div>
-          <div class="post-image">
+          <div className="post-image">
             {post?.image && <img src={post.image} />}
           </div>
         </div>
