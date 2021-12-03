@@ -5,6 +5,7 @@ import {
   faLaptopCode,
   faSeedling,
   faVideo,
+  faLink,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const categoryIcons = {
@@ -15,4 +16,5 @@ export const categoryIcons = {
   oss: faCodeBranch,
   react: faReact,
   streaming: faVideo,
+  web3: faLink,
 };

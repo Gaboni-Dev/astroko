@@ -84,17 +84,17 @@ const hookVideos = eggheadJSON.items.slice(0, 3);
         </section>
         <section class="tile">
           <div class="tile-header-wrapper">
-            <h3 class="tile-header">featured videos</h3>
-            <a href={eggheadProfileURL}>all videos ></a>
-          </div>
-          <FeaturedVideos client:load videos={hookVideos} />
-        </section>
-        <section class="tile">
-          <div class="tile-header-wrapper">
             <h3 class="tile-header">featured posts</h3>
             <a href="/posts">all posts ></a>
           </div>
           {featuredPosts.map(p => <SmallPostPreview post={p} />)}
+        </section>
+        <section class="tile">
+          <div class="tile-header-wrapper">
+            <h3 class="tile-header">featured videos</h3>
+            <a href={eggheadProfileURL}>all videos ></a>
+          </div>
+          <FeaturedVideos client:load videos={hookVideos} />
         </section>
       </article>
     </div>

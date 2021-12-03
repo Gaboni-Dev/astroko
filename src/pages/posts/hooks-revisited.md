@@ -5,7 +5,6 @@ published: true
 layout: "../../layouts/BlogPost.astro"
 description: "This series is a holistic look at React's hooks API and how they each work."
 category: "react"
-featured: true
 tags:
   - "hooks"
 ---

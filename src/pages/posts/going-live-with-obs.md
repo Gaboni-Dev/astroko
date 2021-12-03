@@ -5,7 +5,6 @@ published: true
 layout: "../../layouts/BlogPost.astro"
 description: "I just started live streaming. I’ve done it exactly twice. I wasn’t sure what to expect before I started and, at times, didn’t even know where to start."
 category: "streaming"
-featured: true
 tags:
   - "obs"
 ---
