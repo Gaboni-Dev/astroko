@@ -1,16 +1,25 @@
 ---
-title: "How to make a website in 5 mins?"
-publishDate: "2020-02-09"
+layout: ../../layouts/BlogPost.astro
+featured: true
+title: How to Make a Website in 5 Mins?
+description: Learn how to use ESLint and Prettier to enforce code conventions
+  and formatting.
+image: /images/uploads/maxresdefault.jpg
 published: true
-image: https://digitalhubaustralia.com.au/wp-content/uploads/2021/02/2021-02-24-2.jpg
-layout: "../../layouts/BlogPost.astro"
-description: "Learn how to use ESLint and Prettier to enforce code conventions and formatting."
-category: "javascript"
-featured:  true
 tags:
-  - "eslint"
-  - "prettier"
+  - eslint
+  - prettier
+  - javascript
+category:
+  - javascript
+date: 2022-02-23T17:54:04.139Z
+publishDate: 2020-02-09
 ---
+
+
+
+
+![](/images/uploads/difference-wi-fi-vs-cellular-data.jpg)
 
 Let's face it. Development is hard.
 
@@ -95,9 +104,7 @@ If you're using <a href="https://code.visualstudio.com/" target="_blank">VS Code
 When using ESLint and Prettier together, there are a couple packages you'll want to install in order to help them work well together.
 
 1. <a href="https://www.npmjs.com/package/eslint-config-prettier" target="\_blank">eslint-config-prettier</a> - This disables ESLint's formatting rules and defers that concern to Prettier.
-
 2. <a href="https://www.npmjs.com/package/eslint-plugin-prettier" target="\_blank">eslint-plugin-prettier</a> - Using this plugin allows ESLint to check for violations of Prettier rules and throw errors as part of its linting process.
-
 3. <a href="https://www.npmjs.com/package/eslint-config-airbnb" target="_blank">eslint-config-airbnb</a> - Extending this configuration allows you to use Airbnb's preferred coding style and standards.
 
 With these three packages installed, your `.eslintrc` would look something like this:
