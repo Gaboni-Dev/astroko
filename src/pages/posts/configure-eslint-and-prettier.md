@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BlogPost.astro
 featured: true
-title: How to make a website in 5 mins?
+title: How to Make a Website in 5 Mins?
 description: Learn how to use ESLint and Prettier to enforce code conventions
   and formatting.
 image: /images/uploads/maxresdefault.jpg
@@ -9,7 +9,9 @@ published: true
 tags:
   - eslint
   - prettier
-category: javascript
+category:
+  - javascript
+  - js
 date: 2022-02-23T17:54:04.139Z
 publishDate: 2020-02-09
 ---
