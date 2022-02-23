@@ -1,11 +1,11 @@
 ---
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faTwitter, faTwitch, faCentercode } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faTwitter, faFacebook, faCentercode } from '@fortawesome/free-brands-svg-icons';
 
 const socialLinks = {
     github: 'https://github.com/ryancharris',
-    twitch: 'https://www.twitch.tv/ryan_c_harris',
-    twitter: 'https://twitter.com/ryan_c_harris',
+    facebook: 'https://www.facebook.com/iamyhenewking',
+ 
 }
 
 interface Props {
@@ -23,14 +23,10 @@ const lgClassName = size === 'lg' ? 'social-icons-list-lg' : '';
         <FontAwesomeIcon icon={faGithub} class="social-icon" />
       </a>
     </li>
+
     <li class="social-icon-list-item">
-      <a href={socialLinks.twitter} target="_blank">
-        <FontAwesomeIcon icon={faTwitter} class="social-icon" />
-      </a>
-    </li>
-    <li class="social-icon-list-item">
-      <a href={socialLinks.twitch} target="_blank">
-        <FontAwesomeIcon icon={faTwitch} class="social-icon" />
+      <a href={socialLinks.facebook} target="_blank">
+        <FontAwesomeIcon icon={faFacebook} class="social-icon" />
       </a>
     </li>
   </ul>

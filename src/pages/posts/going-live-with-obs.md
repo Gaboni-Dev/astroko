@@ -2,6 +2,8 @@
 title: "Starting to livestream with OBS"
 publishDate: "2019-11-20"
 published: true
+featured: true
+image: https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/1631/posts/34905/image/Screenshot%202020-04-04%20at%2011.45.38%20pm%20copy.jpg
 layout: "../../layouts/BlogPost.astro"
 description: "I just started live streaming. I’ve done it exactly twice. I wasn’t sure what to expect before I started and, at times, didn’t even know where to start."
 category: "streaming"

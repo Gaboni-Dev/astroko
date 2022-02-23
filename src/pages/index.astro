@@ -6,19 +6,17 @@ import SmallPostPreview from '../components/SmallPostPreview.jsx';
 import BlogFooter from '../components/BlogFooter.astro';
 import FeaturedVideos from '../components/FeaturedVideos.jsx'
 
-let title = 'ryanharris.dev';
-let description = 'software engineer.';
-let permalink = 'https://ryanharris.dev/';
-const eggheadProfileURL = 'https://app.egghead.io/instructors/ryan-harris';
+let title = 'Jeff Gaboni';
+let description = 'Web Developer | SEO Specialist | Content Writer';
+let permalink = 'https://gaboni.dev/';
+ 
 
 let allPosts = Astro.fetchContent('./posts/*.md');
 const featuredPosts = allPosts.filter(post => {
   return post.featured;
 })
 
-const eggheadResponse = await fetch('https://app.egghead.io/api/v1/playlists/react-hooks-revisited-abce.json');
-const eggheadJSON = await eggheadResponse.json();
-const hookVideos = eggheadJSON.items.slice(0, 3);
+ 
 
 ---
 <html lang="en">
@@ -84,18 +82,12 @@ const hookVideos = eggheadJSON.items.slice(0, 3);
         </section>
         <section class="tile">
           <div class="tile-header-wrapper">
-            <h3 class="tile-header">featured posts</h3>
-            <a href="/posts">all posts ></a>
+            <h3 class="tile-header">Featured Posts</h3>
+            <a href="/posts">All Posts ></a>
           </div>
           {featuredPosts.map(p => <SmallPostPreview post={p} />)}
         </section>
-        <section class="tile">
-          <div class="tile-header-wrapper">
-            <h3 class="tile-header">featured videos</h3>
-            <a href={eggheadProfileURL}>all videos ></a>
-          </div>
-          <FeaturedVideos client:load videos={hookVideos} />
-        </section>
+         
       </article>
     </div>
     <BlogFooter />

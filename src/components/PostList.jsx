@@ -10,10 +10,7 @@ function PostList(props) {
   const [searchTerm, setSearchTerm] = useState("");
   const [tagFilter, setTagFilter] = useState("");
 
-  const handleTextInput = (e) => {
-    const sanitizedInput = e.target.value.trim().toLowerCase();
-    setSearchTerm(sanitizedInput);
-  };
+  
 
   const getTagList = (posts) => {
     const tags = [];
@@ -33,17 +30,7 @@ function PostList(props) {
 
   return (
     <>
-      <section className="search-wrapper">
-        <input
-          type="search"
-          name="search"
-          id="search"
-          onChange={handleTextInput}
-          placeholder="Search"
-          className="search-input"
-        />
-        <FontAwesomeIcon icon={faSearch} className="search-icon" />
-      </section>
+      
       <section className="tags-wrapper">
         {getTagList(posts).map((tag) => {
           const className =

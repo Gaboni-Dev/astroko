@@ -1,10 +1,12 @@
 ---
-title: "How to configure ESLint and Prettier to work together"
+title: "How to make a website in 5 mins?"
 publishDate: "2020-02-09"
 published: true
+image: https://digitalhubaustralia.com.au/wp-content/uploads/2021/02/2021-02-24-2.jpg
 layout: "../../layouts/BlogPost.astro"
 description: "Learn how to use ESLint and Prettier to enforce code conventions and formatting."
 category: "javascript"
+featured:  true
 tags:
   - "eslint"
   - "prettier"
