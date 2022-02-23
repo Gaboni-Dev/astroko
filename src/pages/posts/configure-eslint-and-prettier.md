@@ -15,6 +15,10 @@ category:
 date: 2022-02-23T17:54:04.139Z
 publishDate: 2020-02-09
 ---
+![](/images/uploads/blog-header-1200x600-px.jpeg)
+
+
+
 
 
 Let's face it. Development is hard.
