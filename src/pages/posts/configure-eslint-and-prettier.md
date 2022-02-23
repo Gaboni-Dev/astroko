@@ -1,15 +1,17 @@
 ---
-title: "How to make a website in 5 mins?"
-publishDate: "2020-02-09"
+layout: ../../layouts/BlogPost.astro
+featured: true
+title: How to make a website in 5 mins?
+description: Learn how to use ESLint and Prettier to enforce code conventions
+  and formatting.
+image: /images/uploads/maxresdefault.jpg
 published: true
-image: https://digitalhubaustralia.com.au/wp-content/uploads/2021/02/2021-02-24-2.jpg
-layout: "../../layouts/BlogPost.astro"
-description: "Learn how to use ESLint and Prettier to enforce code conventions and formatting."
-category: "javascript"
-featured:  true
 tags:
-  - "eslint"
-  - "prettier"
+  - eslint
+  - prettier
+category: javascript
+date: 2022-02-23T17:54:04.139Z
+publishDate: 2020-02-09
 ---
 
 Let's face it. Development is hard.
