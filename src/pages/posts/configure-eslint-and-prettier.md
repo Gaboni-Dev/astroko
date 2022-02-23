@@ -16,6 +16,11 @@ date: 2022-02-23T17:54:04.139Z
 publishDate: 2020-02-09
 ---
 
+
+
+
+![](/images/uploads/difference-wi-fi-vs-cellular-data.jpg)
+
 Let's face it. Development is hard.
 
 While developers have a multitude of concerns when building software, some of them simply aren't worth worrying about. In my mind, the enforcement of coding style and convention fall squarely within this category. As <a href="https://ryan.warner.codes/" target="_blank" >Ryan Warner</a> informed me, this is called <a href="https://whatis.techtarget.com/definition/Parkinsons-law-of-triviality-bikeshedding" target="_blank">bike-shedding</a>:
@@ -99,9 +104,7 @@ If you're using <a href="https://code.visualstudio.com/" target="_blank">VS Code
 When using ESLint and Prettier together, there are a couple packages you'll want to install in order to help them work well together.
 
 1. <a href="https://www.npmjs.com/package/eslint-config-prettier" target="\_blank">eslint-config-prettier</a> - This disables ESLint's formatting rules and defers that concern to Prettier.
-
 2. <a href="https://www.npmjs.com/package/eslint-plugin-prettier" target="\_blank">eslint-plugin-prettier</a> - Using this plugin allows ESLint to check for violations of Prettier rules and throw errors as part of its linting process.
-
 3. <a href="https://www.npmjs.com/package/eslint-config-airbnb" target="_blank">eslint-config-airbnb</a> - Extending this configuration allows you to use Airbnb's preferred coding style and standards.
 
 With these three packages installed, your `.eslintrc` would look something like this:
