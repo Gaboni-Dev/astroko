@@ -9,9 +9,9 @@ published: true
 tags:
   - eslint
   - prettier
+  - javascript
 category:
   - javascript
-  - js
 date: 2022-02-23T17:54:04.139Z
 publishDate: 2020-02-09
 ---
