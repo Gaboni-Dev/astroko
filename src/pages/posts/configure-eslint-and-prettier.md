@@ -19,7 +19,7 @@ publishDate: 2020-02-09
 
 
 
-This article is not code-intensive, so you won’t need much coding experience. You do need to have a VsCode and a Netlify account. You can create a Netlify account [here ](https://app.netlify.com/)and download Vs Code [here](https://code.visualstudio.com/).
+This article is not code-intensive, so you won’t need much coding experience. You do need to have a **VsCode** and a **Netlify** account. You can create a Netlify account [here ](https://app.netlify.com/)and download Vs Code [here](https://code.visualstudio.com/).
 
 
 
