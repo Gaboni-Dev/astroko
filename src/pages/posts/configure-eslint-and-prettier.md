@@ -27,13 +27,7 @@ This article is not code-intensive, so you won’t need much coding experience. 
 
 The webpage we will host consists of a single HTML file with minimal CSS. Here’s what the code in our HTML file should look like:
 
-Now that you have **VsCode**. **Open** and make a directory called **Website** and file **index.html** and paste the code below.
-
-
-
-![How to Make a Website in 5 Mins?](/images/uploads/vscode.jpg)
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,6 +41,12 @@ Now that you have **VsCode**. **Open** and make a directory called **Website** a
 </body>
 </html>
 ```
+
+Now that you have **VsCode**. **Open** and make a directory called **Website** and file **index.html** and paste the code below.
+
+
+
+![How to Make a Website in 5 Mins?](/images/uploads/vscode.jpg)
 
 
 
