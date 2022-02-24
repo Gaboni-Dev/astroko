@@ -5,7 +5,7 @@ title: How to Make a Website in 5 Mins?
 description: This article is not code-intensive, so you won’t need much coding
   experience. You do need to have a VsCode and a Netlify account. You can create
   a Netlify account here and download Vs Code here.
-image: /images/uploads/blog-header-1200x600-px.jpeg
+image: /images/uploads/how-to-make-a-website-in-5-mins.png
 published: true
 tags:
   - VsCode
@@ -15,9 +15,7 @@ category:
 date: 2022-02-23T17:54:04.139Z
 publishDate: 2020-02-09
 ---
-![How to Make a Website in 5 Mins?](/images/uploads/blog-header-1200x600-px.jpeg)
-
-
+![How to Make a Website in 5 Mins?](/images/uploads/how-to-make-a-website-in-5-mins.png)
 
 This article is not code-intensive, so you won’t need much coding experience. You do need to have a **VsCode** and a **Netlify** account. You can create a Netlify account [here ](https://app.netlify.com/)and download Vs Code [here](https://code.visualstudio.com/).
 
@@ -50,13 +48,9 @@ Now that you have **VsCode**. **Open** and make a directory called **Website** a
 
 ![How to Make a Website in 5 Mins?](/images/uploads/vscode.jpg)
 
-
-
 <br/><br/>
 
 Now that we have our code written, we need to put it in a Netlify.
-
-
 
 <br/><br/>
 
@@ -79,8 +73,6 @@ To use this, we need to visit the Netlify Drop website [here](https://app.netlif
  Open the link and Boom!!! you just created a website
 
 <br/><br/>
-
-
 
 ### **Conclusion**
 
