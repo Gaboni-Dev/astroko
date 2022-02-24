@@ -2,14 +2,14 @@
 layout: ../../layouts/BlogPost.astro
 featured: true
 title: How to Make a Website in 5 Mins?
-description: Learn how to use ESLint and Prettier to enforce code conventions
-  and formatting.
+description: This article is not code-intensive, so you won’t need much coding
+  experience. You do need to have a VsCode and a Netlify account. You can create
+  a Netlify account here and download Vs Code here.
 image: /images/uploads/blog-header-1200x600-px.jpeg
 published: true
 tags:
-  - eslint
-  - prettier
-  - javascript
+  - VsCode
+  - HTML
 category:
   - javascript
 date: 2022-02-23T17:54:04.139Z
