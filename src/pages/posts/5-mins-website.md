@@ -72,6 +72,8 @@ To use this, we need to visit the Netlify Drop website [here](https://app.netlif
 
  Open the link and Boom!!! you just created a website
 
+![How to Make a Website in 5 Mins?](/images/uploads/boom.jpg)
+
 <br/><br/>
 
 ### **Conclusion**
