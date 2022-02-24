@@ -8,9 +8,9 @@ description: Have you ever thought about becoming a software developer or
 image: /images/uploads/software_developer-2x.webp
 published: true
 tags:
-  - developer
+  - code
 category:
-  - git
+  - javascript
 date: 2022-02-24T02:16:34.764Z
 publishDate: 2019-11-20
 ---
