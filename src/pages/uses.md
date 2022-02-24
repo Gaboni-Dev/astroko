@@ -1,5 +1,5 @@
 ---
-layout: "../layouts/Page.astro"
+layout: "../layouts/BlogPost.astro"
 ---
 
 ### Computer

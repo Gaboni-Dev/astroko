@@ -1,7 +1,7 @@
 ---
 import "prismjs/themes/prism-okaidia.css"
 
-import Author from './Author.astro';
+
 import TagList from './TagList.jsx';
 
 export interface Props {
@@ -9,14 +9,19 @@ export interface Props {
   author: string;
   category: string;
   tags: string[];
+  image: string;
+
 }
 
-const { title, author, category, tags } = Astro.props;
+const { title, category, tags, image } = Astro.props;
 ---
 
 <div class="layout">
   <article class="content">
     <header>
+      <div className="post-image">
+          {<img src={image} />}
+          </div>
       <h1 class="title">{title}</h1>
       {(category || tags) && (
         <TagList category={category} tags={tags} />
