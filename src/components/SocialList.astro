@@ -1,10 +1,12 @@
 ---
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faTwitter, faFacebook, faCentercode } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const socialLinks = {
     github: 'https://github.com/iamthenewking',
     facebook: 'https://www.facebook.com/iamthenewking',
+    email:  'mailto:mrgabonijeff@gmail.com',
  
 }
 
@@ -27,6 +29,11 @@ const lgClassName = size === 'lg' ? 'social-icons-list-lg' : '';
     <li class="social-icon-list-item">
       <a href={socialLinks.facebook} target="_blank">
         <FontAwesomeIcon icon={faFacebook} class="social-icon" />
+      </a>
+    </li>
+    <li class="social-icon-list-item">
+      <a href={socialLinks.email} target="_blank">
+        <FontAwesomeIcon icon={faEnvelope} class="social-icon" />
       </a>
     </li>
   </ul>
