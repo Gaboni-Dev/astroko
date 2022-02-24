@@ -37,7 +37,7 @@ The webpage we will host consists of a single HTML file with minimal CSS. Hereâ€
     <title>Document</title>
 </head>
 <body>
-    <h1>Deploying a basic webpage to netlify</h1> 
+   <h1>Deploying a basic webpage to netlify</h1> 
 </body>
 </html>
 ```
