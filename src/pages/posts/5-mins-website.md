@@ -37,7 +37,7 @@ The webpage we will host consists of a single HTML file with minimal CSS. Hereâ€
     <title>Document</title>
 </head>
 <body>
-    <h1>Deploying a basic webpage to netlify</h1> 
+   <h1>Deploying a basic webpage to netlify</h1> 
 </body>
 </html>
 ```
@@ -71,6 +71,8 @@ To use this, we need to visit the Netlify Drop website [here](https://app.netlif
 ![How to Make a Website in 5 Mins?](/images/uploads/dashboard.jpg)
 
  Open the link and Boom!!! you just created a website
+
+![How to Make a Website in 5 Mins?](/images/uploads/boom.jpg)
 
 <br/><br/>
 
