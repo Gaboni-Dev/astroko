@@ -1,5 +1,6 @@
 ---
-layout: "../layouts/Page.astro"
+layout: "../layouts/BlogPost.astro"
+title: Talks
 ---
 
 ### [A Workshop of Fire & Ice](https://codesandbox.io/s/stupefied-river-3usq1)
