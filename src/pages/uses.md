@@ -1,5 +1,6 @@
 ---
 layout: "../layouts/BlogPost.astro"
+Title: Uses
 ---
 
 ### Computer
