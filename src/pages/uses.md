@@ -1,6 +1,7 @@
 ---
-layout: "../layouts/BlogPost.astro"
+layout: ../layouts/BlogPost.astro
 Title: Uses
+title: Uses
 ---
 
 ### Computer
