@@ -27,7 +27,7 @@ This article is not code-intensive, so you won’t need much coding experience. 
 
 The webpage we will host consists of a single HTML file with minimal CSS. Here’s what the code in our HTML file should look like:
 
-```html
+```php
 <!DOCTYPE html>
 <html lang="en">
 <head>
