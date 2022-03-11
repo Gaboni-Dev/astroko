@@ -50,7 +50,7 @@ Now that you have **VsCode**. **Open** and make a directory called **Website** a
 
 <br/><br/>
 
-Now that we have our code written, we need to put it in a Netlify.
+Now that we have our code written, we need to put it on Netlify.
 
 <br/><br/>
 
