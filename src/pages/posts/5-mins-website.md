@@ -29,7 +29,9 @@ The webpage we will host consists of a single HTML file with minimal CSS. Hereâ€
 
 
 
-<iframe width="100%" height="261" frameborder="0" src="https://snipphub.github.io/index.html?l=html#XQAAAQA0AQAAAAAAAAAeCEUG0O+oKBdZ2an16qclPsVsA9xArjEo+v7wdal3CixLBEPGXJtn0UXvFQ3qIlfJd2uqmDErmw93h0ELrg/ujKxhPWi5Or8MuzHg47kFrYLtan/rckVxF4G3mtphtGE5JB9S4mdJLJ6BYJL7wfnLe37vRLNhnWVS9KlFn4LFkhYDbAs6MkG0fgsgPYtmCesNAWrOZ7vAggGRDDtOfx7e0W+AGY5Gpj2QoipCW/zw6/XCSSvbWTqfheugIsvBEiaTaiOfSJh1CspGUnEfryLuQVWiEXwUMjuHdmXfTstLW9//m0cnAA=="></iframe>
+<iframe width="100%" height="261" frameborder="0" src="https://snipphub.github.io/?l=html#XQAAAQAlAQAAAAAAAAAFEAWsO98VkFogy+PXWxCfH6yVVEluvADEai9/8WZjk+V9m0vRJq/SRSQR4cmcRKLkpTIEQl5fVZMoMXmkd8lUeVmvFFzRIizZQgIe24iLgPLxKhe9inxC2BrzzzC9ej0MJSHZn588msbaWOXQTvXMcBOw6NYmx3YMdMfsMZMSoipTctQyWkWnJ9P9/yCBcFVB4ZlxzPz/aiqpQ1uHf27EoZr4M3Sz9tD0Isv7JHzKHlfFdtrPAA0BynJmaeQZdBRLVsWVgpESaBwZW1mWAnsoFqMKdgtsX/8aFP4A"></iframe>
+
+
 
 Now that you have **VsCode**. **Open** and make a directory called **Website** and file **index.html** and paste the code below.
 
