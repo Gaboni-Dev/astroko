@@ -27,20 +27,9 @@ This article is not code-intensive, so you won’t need much coding experience. 
 
 The webpage we will host consists of a single HTML file with minimal CSS. Here’s what the code in our HTML file should look like:
 
-```php
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-   <h1>Deploying a basic webpage to netlify</h1> 
-</body>
-</html>
-```
+
+
+<iframe width="100%" height="261" frameborder="0" src="https://snipphub.github.io/index.html?l=html#XQAAAQA0AQAAAAAAAAAeCEUG0O+oKBdZ2an16qclPsVsA9xArjEo+v7wdal3CixLBEPGXJtn0UXvFQ3qIlfJd2uqmDErmw93h0ELrg/ujKxhPWi5Or8MuzHg47kFrYLtan/rckVxF4G3mtphtGE5JB9S4mdJLJ6BYJL7wfnLe37vRLNhnWVS9KlFn4LFkhYDbAs6MkG0fgsgPYtmCesNAWrOZ7vAggGRDDtOfx7e0W+AGY5Gpj2QoipCW/zw6/XCSSvbWTqfheugIsvBEiaTaiOfSJh1CspGUnEfryLuQVWiEXwUMjuHdmXfTstLW9//m0cnAA=="></iframe>
 
 Now that you have **VsCode**. **Open** and make a directory called **Website** and file **index.html** and paste the code below.
 
