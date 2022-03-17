@@ -4,7 +4,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import SmallPostPreview from '../components/SmallPostPreview.jsx';
 import BlogFooter from '../components/BlogFooter.astro';
-import FeaturedVideos from '../components/FeaturedVideos.jsx'
+
 
 let title = 'Jeff Gaboni';
 let description = 'Web Developer | SEO Specialist | Content Writer';
@@ -46,6 +46,8 @@ const featuredPosts = allPosts.filter(post => {
         margin-top: 2rem;
       }
 
+      
+
       .content :global(main > * + *) {
         margin-top: 1rem;
       }
@@ -82,10 +84,14 @@ const featuredPosts = allPosts.filter(post => {
         </section>
         <section class="tile">
           <div class="tile-header-wrapper">
-            <h3 class="tile-header">Featured Posts</h3>
-            <a href="/posts">All Posts ></a>
+            <h3 class="tile-header">Posts</h3>
+             
           </div>
           {featuredPosts.map(p => <SmallPostPreview post={p} />)}
+          <div class="tile-header-wrapper">
+        
+            <a href="/posts">All Posts </a>
+          </div>
         </section>
          
       </article>

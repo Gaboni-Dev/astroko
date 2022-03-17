@@ -11,11 +11,11 @@ tags:
   - VsCode
   - HTML
 category:
-  - javascript
+  - oss
 date: 2022-02-23T17:54:04.139Z
 publishDate: 2020-02-09
 ---
-![How to Make a Website in 5 Mins?](/images/uploads/how-to-make-a-website-in-5-mins.png)
+
 
 This article is not code-intensive, so you won’t need much coding experience. You do need to have a **VsCode** and a **Netlify** account. You can create a Netlify account [here ](https://app.netlify.com/)and download Vs Code [here](https://code.visualstudio.com/).
 

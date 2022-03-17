@@ -14,7 +14,7 @@ article:last-of-type {
   align-items: baseline;
   display: flex;
   flex-direction: row;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   justify-content: flex-start;
   border-bottom: 4px solid var(--theme-divider);
 }
@@ -35,9 +35,10 @@ article:last-of-type {
 }
 
 .post-image {
-  width: 120px;
+  width: 170px;
   align-self: center;
   margin-left: 24px;
+  border-radius: 20px;
 }
 
 header {
@@ -55,8 +56,9 @@ main {
 }
 
 .title {
-  font-size: 1.75rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 5
+  00;
   color: var(--theme-text);
 }
 

@@ -19,7 +19,7 @@ const { title, category, tags, image } = Astro.props;
 <div class="layout">
   <article class="content">
     <header>
-      <div className="post-image">
+      <div className="hero-image">
           {<img src={image} />}
           </div>
       <h1 class="title">{title}</h1>
@@ -47,6 +47,8 @@ const { title, category, tags, image } = Astro.props;
   margin-top: 2rem;
 }
 
+
+
 @media (max-width: 50em) {
   .hero-image {
     height: 260px;
@@ -58,6 +60,8 @@ const { title, category, tags, image } = Astro.props;
 .content :global(main > * + *) {
   margin-top: 1rem;
 }
+
+
 
 .content :global(h2) {
   margin-top: 4rem;

@@ -8,6 +8,10 @@ import {
   faLink,
 } from "@fortawesome/free-solid-svg-icons";
 
+
+
+
+
 export const categoryIcons = {
   books: faBook,
   garden: faSeedling,

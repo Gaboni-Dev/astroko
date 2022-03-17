@@ -5,7 +5,7 @@ import BlogPost from '../components/BlogPost.astro';
 import BlogFooter from '../components/BlogFooter.astro';
 
 const {content} = Astro.props;
-const {title, description, publishDate, author, heroImage, permalink, alt, category, tags, attachments} = content;
+const {title, description, publishDate, author, heroImage, permalink, alt, category, tags, image} = content;
 
 
 
@@ -19,7 +19,7 @@ const {title, description, publishDate, author, heroImage, permalink, alt, categ
   <body>
     <main>
       <Header />
-      <BlogPost title={title} author={author} heroImage={heroImage} publishDate={publishDate} alt={alt} category={category} tags={tags}>
+      <BlogPost title={title} author={author} heroImage={heroImage} image={image} publishDate={publishDate} alt={alt} category={category} tags={tags}>
         <slot />
       </BlogPost>
       <BlogFooter />

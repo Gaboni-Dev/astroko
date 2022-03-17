@@ -31,8 +31,8 @@ function BlogPostPreview(props) {
         <main>
           <p>{post.description}</p>
           <a href={post.url} className="read-more">
-            Read
-            <FontAwesomeIcon icon={faShoePrints} className="footprints" />
+            Read >
+            {/* <FontAwesomeIcon icon={faShoePrints} className="footprints" /> */}
           </a>
         </main>
       </div>

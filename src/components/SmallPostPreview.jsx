@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoePrints } from "@fortawesome/free-solid-svg-icons";
+ 
 
 import TagList from "./TagList.jsx";
 
@@ -11,6 +11,8 @@ function SmallPostPreview(props) {
   const { post } = props;
   const tags = post?.tags ? post.tags : [];
   const category = post?.category ? post.category : [];
+
+  
 
   return (
     <article>
@@ -24,7 +26,7 @@ function SmallPostPreview(props) {
           </div>
           <div className="post-content">
             <header>
-              <h1 className="title">{post.title}</h1>
+              <div className="title">{post.title}</div>
             </header>
           </div>
           <div className="post-image">

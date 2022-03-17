@@ -9,6 +9,7 @@
 
   --color-white: #fff;
   --color-black: #111827;
+  --color-bg-custom: #f0f7bd;
 
   --color-gray-50: #f9fafb;
   --color-gray-100: #f3f4f6;
@@ -21,13 +22,16 @@
   --color-gray-800: #1f2937;
   --color-gray-900: #;
 
-  --color-blue: #3894ff;
+
+  --color-tomato: tomato;
+  --color-tomato-rgb: 255, 91, 71;
+  --color-blue: #0071f3;
   --color-blue-rgb: 56, 148, 255;
   --color-green: #17c083;
   --color-green-rgb: 23, 192, 131;
   --color-orange: #ff5d01;
   --color-orange-rgb: 255, 93, 1;
-  --color-purple: #882de7;
+  --color-purple: #7b00ff;
   --color-purple-rgb: 136, 45, 231;
   --color-red: #ff1639;
   --color-red-rgb: 255, 22, 57;
@@ -37,14 +41,14 @@
 
 :root {
   color-scheme: light;
-  --theme-accent: var(--color-orange);
-  --theme-accent-rgb: var(--color-orange-rgb);
+  --theme-accent: var(--color-tomato);
+  --theme-accent-rgb: var(--color-tomato-rgb);
   --theme-accent-opacity: 0.1;
-  --theme-divider: var(--color-gray-100);
+  /* --theme-divider: var(--color-gray-50); */
   --theme-text: var(--color-gray-800);
   --theme-text-light: var(--color-gray-600);
   --theme-text-lighter: var(--color-gray-400);
-  --theme-bg: var(--color-white);
+  --theme-bg: var(--color-bg-custom);
   --theme-bg-offset: var(--color-gray-100);
   --theme-bg-accent: rgba(var(--theme-accent-rgb), var(--theme-accent-opacity));
   --theme-code-inline-bg: var(--color-gray-100);
@@ -150,6 +154,7 @@ nav ul {
 
 h1 {
   font-size: clamp(2.488rem, 1.924rem + 1.41vw, 3.052rem);
+  font-weight: 600;
 }
 
 h2 {
