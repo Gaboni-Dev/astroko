@@ -27,20 +27,11 @@ This article is not code-intensive, so you won’t need much coding experience. 
 
 The webpage we will host consists of a single HTML file with minimal CSS. Here’s what the code in our HTML file should look like:
 
-```php
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-   <h1>Deploying a basic webpage to netlify</h1> 
-</body>
-</html>
-```
+
+
+<iframe width="100%" height="261" frameborder="0" src="https://snipphub.github.io/?l=html#XQAAAQAlAQAAAAAAAAAFEAWsO98VkFogy+PXWxCfH6yVVEluvADEai9/8WZjk+V9m0vRJq/SRSQR4cmcRKLkpTIEQl5fVZMoMXmkd8lUeVmvFFzRIizZQgIe24iLgPLxKhe9inxC2BrzzzC9ej0MJSHZn588msbaWOXQTvXMcBOw6NYmx3YMdMfsMZMSoipTctQyWkWnJ9P9/yCBcFVB4ZlxzPz/aiqpQ1uHf27EoZr4M3Sz9tD0Isv7JHzKHlfFdtrPAA0BynJmaeQZdBRLVsWVgpESaBwZW1mWAnsoFqMKdgtsX/8aFP4A"></iframe>
+
+
 
 Now that you have **VsCode**. **Open** and make a directory called **Website** and file **index.html** and paste the code below.
 
@@ -50,7 +41,7 @@ Now that you have **VsCode**. **Open** and make a directory called **Website** a
 
 <br/><br/>
 
-Now that we have our code written, we need to put it in a Netlify.
+Now that we have our code written, we need to put it on Netlify.
 
 <br/><br/>
 
