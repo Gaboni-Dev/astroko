@@ -10,7 +10,7 @@ const navItems = [
   }
   ,
   {
-    name: 'Projects',
+    name: 'Works',
     path: '/projects'
   }
 ]
@@ -21,7 +21,11 @@ const navItems = [
   <ul class="nav-list">
     {navItems.map(item => {
       return (
+          
+       
+
         <li class="nav-list-item">
+        
           <a href={item.path}>
               {item.name}
           </a>
