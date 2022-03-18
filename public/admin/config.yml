@@ -26,12 +26,7 @@ collections: # A list of collections the CMS should be able to edit
           widget: "boolean",
           default: true,
         }
-        - {
-          label: "Featued",
-          name: "featured",
-          widget: "boolean",
-          default: true,
-        }
+      - { label: "Featued", name: "featured", widget: "boolean", default: true }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Category", name: "category", widget: "list" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
