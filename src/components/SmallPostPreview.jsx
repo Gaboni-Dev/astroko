@@ -1,6 +1,5 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
- 
 
 import TagList from "./TagList.jsx";
 
@@ -11,8 +10,6 @@ function SmallPostPreview(props) {
   const { post } = props;
   const tags = post?.tags ? post.tags : [];
   const category = post?.category ? post.category : [];
-
-  
 
   return (
     <article>

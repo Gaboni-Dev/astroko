@@ -10,8 +10,6 @@ function PostList(props) {
   const [searchTerm, setSearchTerm] = useState("");
   const [tagFilter, setTagFilter] = useState("");
 
-  
-
   const getTagList = (posts) => {
     const tags = [];
 
@@ -30,7 +28,6 @@ function PostList(props) {
 
   return (
     <>
-      
       <section className="tags-wrapper">
         {getTagList(posts).map((tag) => {
           const className =
