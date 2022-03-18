@@ -5,7 +5,7 @@ title: Projects
 
 ### Current Projects
 
-Currently building websites @ [WebDev+](https://webdevpl.us/) as a web developer
+Currently building websites @ [WebDev+](https://webdevpl.us/)  
  
 
 ### Personal Projects
