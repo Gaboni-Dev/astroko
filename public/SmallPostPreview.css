@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
 .content :global(main > * + *) {
   margin-top: 1rem;
 }
@@ -57,8 +59,8 @@ main {
 
 .title {
   font-size: 1.25rem;
-  font-weight: 5
-  00;
+  font-family: Montserrat, sans-serif;
+  font-weight: 5 00;
   color: var(--theme-text);
 }
 
