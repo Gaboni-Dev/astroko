@@ -25,6 +25,7 @@ const featuredPosts = allPosts.filter(post => {
     <link rel="stylesheet" href="/blog.css" />
 
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
       body {
         width: 100%;
         display: grid;
@@ -66,6 +67,13 @@ const featuredPosts = allPosts.filter(post => {
         justify-content: space-between;
         margin-bottom: 2rem;
       }
+
+      .tile-header {
+    margin-bottom: 0.75rem;
+    text-align: center;
+    font-family: Montserrat,sans-serif;
+    font-size: 20px;
+  }
 
       @media (min-width: 50em) {
         .content {

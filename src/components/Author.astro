@@ -6,6 +6,7 @@ import SocialList from './SocialList.astro';
 
 ---
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
   .author {
     display: flex;
     flex-direction: column;
@@ -19,14 +20,15 @@ import SocialList from './SocialList.astro';
   .author-name {
     margin: 0;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
+    font-family: Montserrat,sans-serif;
+    font-weight: 900;
   }
 
   .author-desc {
     margin-bottom: 0.75rem;
     text-align: center;
-    font-weight: 500;
+    font-family: Montserrat,sans-serif;
+    font-size: 20px;
   }
 
   .author-picture {
@@ -75,9 +77,8 @@ import SocialList from './SocialList.astro';
 
 <div class="author">
   <div class="author-bio">
-    <h1 class="author-name">Hi <em>.</em> I'm Jeff 👋</h1>  
-    <p class="author-desc">Web Developer <em>/</em> SEO Specialist <em>/</em> Content Writer</p>
-    <p class="author-desc">Currently working @  <a href="https://webdevpl.us/"> Webdev+</a></p>
+    <h1 class="author-name">hi <em>.</em> i'm jeff 👋</h1>  
+    <p class="author-desc">Web Developer <em>/</em> SEO Specialist <em>/</em> Content Writer. Currently working @  <a href="https://webdevpl.us/"> Webdev+</a></p>
     <SocialList size="lg" />
   </div>
   <div class="author-picture">
