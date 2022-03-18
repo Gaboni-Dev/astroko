@@ -2,8 +2,8 @@
 import Author from '../components/Author.astro'
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
-import SmallPostPreview from '../components/SmallPostPreview.jsx';
-import BlogFooter from '../components/BlogFooter.astro';
+// import SmallPostPreview from '../components/SmallPostPreview.jsx';
+// import BlogFooter from '../components/BlogFooter.astro';
 
 
 let title = 'Jeff Gaboni';
@@ -46,7 +46,25 @@ const featuredPosts = allPosts.filter(post => {
       .content {
         margin-top: 2rem;
       }
+     
 
+     em {
+      color: blueviolet;
+      font-size: x-small;
+      margin-left: 10px;
+     }
+    
+
+    .foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: small;
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+  }
       
 
       .content :global(main > * + *) {
@@ -90,7 +108,7 @@ const featuredPosts = allPosts.filter(post => {
         <section class="tile">
           <Author />
         </section>
-        <section class="tile">
+        <!-- <section class="tile">
           <div class="tile-header-wrapper">
             <h3 class="tile-header">Posts</h3>
              
@@ -100,11 +118,14 @@ const featuredPosts = allPosts.filter(post => {
         
             <a href="/posts">All Posts </a>
           </div>
-        </section>
+        </section> -->
          
       </article>
     </div>
-    
-    <BlogFooter />
+    <div class="foot">
+  Silence is golden  <em>Anonymous</em>
+
+</div>
+    <!-- <BlogFooter /> -->
   </body>
 </html>
