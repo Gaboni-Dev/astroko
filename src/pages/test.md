@@ -1,5 +1,6 @@
 ---
-layout: $/layouts/BlogPost.astro
+layout: ../layouts/BlogPost.astro
 title: test
 ---
+
 test
