@@ -1,13 +1,13 @@
 ---
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faPrint} from '@fortawesome/free-solid-svg-icons';
+import { faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faPrint, faAddressBook} from '@fortawesome/free-solid-svg-icons';
 
 const socialLinks = {
     // github: 'https://github.com/iamthenewking',
     facebook: 'https://www.m.me/iamthenewking',
     email:  'mailto:mrgabonijeff@gmail.com',
-    resume:  '../../jeffreygaboni.pdf',
+    resume:  '../../jeffreygaboniresume.pdf',
  
 }
 
@@ -40,7 +40,7 @@ const lgClassName = size === 'lg' ? 'social-icons-list-lg' : '';
 
     <li class="social-icon-list-item">
       <a href={socialLinks.resume} target="_blank">
-        <FontAwesomeIcon icon={faPrint} class="social-icon" />
+        <FontAwesomeIcon icon={faAddressBook} class="social-icon" />
       </a>
     </li>
 
