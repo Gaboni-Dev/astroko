@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+.content :global(main > * + *) {
+  margin-top: 1rem;
+}
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: small;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+}
+
+article {
+  margin-bottom: 2rem;
+}
+
+article:last-of-type {
+  margin-bottom: 0;
+}
+
+.post-preview {
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1rem;
+  justify-content: flex-start;
+  border-bottom: 4px solid var(--theme-divider);
+}
+
+.post-content {
+  width: 100%;
+}
+
+.post-category-icon-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  width: 36px;
+}
+
+.post-category-icon {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.post-image {
+  width: 170px;
+  align-self: center;
+  margin-left: 24px;
+  border-radius: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 0;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 5 00;
+  color: var(--theme-text);
+}
+
+.read-more {
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+}
+
+.footprints {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+@media (min-width: 50em) {
+  .post-category-icon-wrapper {
+    width: 48px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+}

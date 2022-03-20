@@ -1,4 +1,8 @@
-import { faReact, faJsSquare, faMarkdown } from "@fortawesome/free-brands-svg-icons";
+import {
+  faReact,
+  faJsSquare,
+  faMarkdown,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   faBook,
   faCodeBranch,
@@ -7,10 +11,6 @@ import {
   faVideo,
   faLink,
 } from "@fortawesome/free-solid-svg-icons";
-
-
-
-
 
 export const categoryIcons = {
   books: faBook,

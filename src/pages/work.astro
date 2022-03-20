@@ -2,18 +2,20 @@
 import Author from '../components/Author.astro'
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
-
-
-// import BlogFooter from '../components/BlogFooter.astro';
-
+import BlogFooter from '../components/BlogFooter.astro';
+import Work from '../components/Work.astro';
+import ProjectPreview from '../components/ProjectPreview.jsx';
 
 let title = 'Jeff Gaboni - Web Developer | SEO Specialist | Content Writer';
 let description = 'Web Developer | SEO Specialist | Content Writer';
 let permalink = 'https://www.jeffgaboni.com';
  
 
-
-
+ 
+let allProjects = Astro.fetchContent('./projects/*.md');
+const featuredProjects = allProjects.filter(projects => {
+  return projects.featured;
+})
  
 
 ---
@@ -53,16 +55,7 @@ let permalink = 'https://www.jeffgaboni.com';
      }
     
 
-    .foot {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    font-size: small;
-    font-family: Montserrat,sans-serif;
-    font-size: 14px;
-  }
+     
       
 
       .content :global(main > * + *) {
@@ -104,16 +97,22 @@ let permalink = 'https://www.jeffgaboni.com';
     <div class="layout">
       <article class="content">
         <section class="tile">
-          <Author />
+          <Work />
         </section>
-       
-         
+         <section class="tile">
+          <div class="tile-header-wrapper">
+           
+             
+          </div>
+          {featuredProjects.map(p => <ProjectPreview projects={p} />)}
+          <div class="tile-header-wrapper">
+        
+          
+          </div>
+        </section>
       </article>
     </div>
-    <div class="foot">
-  Silence is golden  <em>Anonymous</em>
-
-</div>
-    <!-- <BlogFooter /> -->
+    
+    <BlogFooter />
   </body>
 </html>

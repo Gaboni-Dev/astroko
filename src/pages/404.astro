@@ -17,6 +17,8 @@ let permalink = 'https://www.jeffgaboni.com';
     <link rel="stylesheet" href="/blog.css" />
 
     <style>
+
+     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
       body {
         width: 100%;
         display: grid;
@@ -41,6 +43,15 @@ let permalink = 'https://www.jeffgaboni.com';
       .content :global(main > * + *) {
         margin-top: 1rem;
       }
+
+    .about {
+    margin: 0;
+    text-align: center;
+    font-family: Montserrat,sans-serif;
+    font-weight: 900;
+  }
+
+
     </style>
   </head>
 
@@ -48,7 +59,7 @@ let permalink = 'https://www.jeffgaboni.com';
     <Header />
     <div class="layout">
       <article class="content">
-    <center><h1>Lost in space, astronaut? 🤦</h1>
+    <center><h1 class="about">Lost in space, astronaut? 🤦</h1>
 We couldn’t find the page you were looking for—let’s get you back to <a href="/">Home</a></center> 
       </article>
     </div>
