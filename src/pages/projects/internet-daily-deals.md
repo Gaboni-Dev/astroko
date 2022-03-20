@@ -2,7 +2,7 @@
 layout: ../../layouts/BlogPost.astro
 featured: true
 title: Internet Daily Deals
-description: CMS (netlify cms) website built with Jekyll Deployed with Github Action and hosted a on Netlify
+description: CMS (netlify cms) website built with Jekyll Deployed with Github Action and hosted on Netlify
 image: /images/uploads/project-idd.jpg
 website: https://www.internetdailydeals.com/
 published: true
