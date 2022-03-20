@@ -3,7 +3,7 @@ layout: ../../layouts/BlogPost.astro
 featured: true
 title: Snipp Hub
 description: Snipp Hub is a website similar to Pastebin where you can store any piece of code, and generate links for easy sharing
-image: /images/uploads/sniphub.png
+image: /images/uploads/snipphub.png
 website: https://snipphub.github.io/
 published: true
 tags:
