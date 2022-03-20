@@ -9,7 +9,7 @@ published: true
 tags:
   - code
 category:
-  - javascript
+  - web3
 date: 2022-02-24T02:16:34.764Z
 publishDate: 2019-11-20
 ---
