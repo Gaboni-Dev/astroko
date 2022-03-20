@@ -1,11 +1,11 @@
 ---
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPrint} from '@fortawesome/free-solid-svg-icons';
 
 const socialLinks = {
-    github: 'https://github.com/iamthenewking',
-    facebook: 'https://www.facebook.com/iamthenewking',
+    // github: 'https://github.com/iamthenewking',
+    facebook: 'https://www.m.me/iamthenewking',
     email:  'mailto:mrgabonijeff@gmail.com',
     resume:  '../../jeffreygaboni.pdf',
  
@@ -21,15 +21,15 @@ const lgClassName = size === 'lg' ? 'social-icons-list-lg' : '';
 ---
 <div class="social-list-wrapper">
   <ul class={`social-icons-list ${lgClassName}`}>
-    <li class="social-icon-list-item">
+    <!-- <li class="social-icon-list-item">
       <a href={socialLinks.github} target="_blank">
         <FontAwesomeIcon icon={faGithub} class="social-icon" />
       </a>
-    </li>
+    </li> -->
 
     <li class="social-icon-list-item">
       <a href={socialLinks.facebook} target="_blank">
-        <FontAwesomeIcon icon={faFacebook} class="social-icon" />
+        <FontAwesomeIcon icon={faFacebookMessenger} class="social-icon" />
       </a>
     </li>
     <li class="social-icon-list-item">
