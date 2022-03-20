@@ -14,4 +14,4 @@ date: 2022-03-16T02:16:34.764Z
 publishDate: 2019-11-20
 ---
 
-CMS (netlify cms) website built with Jekyll Deployed with Github Action and hosted a on Netlify
+Web app to play local video files and youtube videos in sync with your friends for a great movie night! Built with Nuxt and Socket
