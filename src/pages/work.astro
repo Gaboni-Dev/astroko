@@ -3,12 +3,12 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import BlogFooter from '../components/BlogFooter.astro';
- 
 import ProjectPreview from '../components/ProjectPreview.jsx';
 
 let title = 'Projects  &#9996;';
 let description = 'Web Developer | SEO Specialist | Content Writer';
 let permalink = 'https://www.jeffgaboni.com';
+let webdevplusurl = "https://www.webdevpl.us";
 let hire = 'Available for hire &#9889;';
 let webdevplus = 'Webdev+';
 let currentlyworkingat = 'Currently working @ ';
@@ -179,7 +179,7 @@ const featuredProjects = allProjects.filter(projects => {
   <div class="projects-container">
    
     
-    <p class="hire">  {currentlyworkingat}  <a href="{permalink}"> {webdevplus}</a> </p>
+    <p class="hire">  {currentlyworkingat}  <a href="{webdevplusurl}"> {webdevplus}</a> </p>
     <p class="forhire">{hire}  </p>
   
      <h1 class="projects-name">{title} <em>.</em></h1>  

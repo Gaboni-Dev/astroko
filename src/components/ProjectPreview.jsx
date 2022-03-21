@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import TagList from "./TagList.jsx";
 
-import { categoryIcons, monthOfYear } from "../common.js";
+import { categoryIcons } from "../common.js";
 import "/Project.css";
 
 function ProjectPreview(props) {
