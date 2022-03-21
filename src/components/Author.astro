@@ -2,7 +2,11 @@
 import SocialList from './SocialList.astro';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faCircle } from '@fortawesome/free-solid-svg-icons';
-
+let authordesc = 'Web Developer <em>/</em> SEO Specialist <em>/</em> Content Writer<em>.</em> Currently working @  <a href="https://webdevpl.us/"> Webdev+</a>';
+let hi = 'hi <em>.</em> i&#39m jeff &#9996;';
+let forhire = 'Available for hire <em><strong>↓↓</strong></em>';
+let subdesc = 'Writing with <a href="https://daringfireball.net/projects/markdown/">@Markdown</a> and Building websites with&nbsp; <a href="https://jamstack.org/generators/" rel="nofollow">@Jamstack</a> ';
+let pic = '/assets/profile.jpg';
 
 ---
 <style>
@@ -55,10 +59,6 @@ import SocialList from './SocialList.astro';
   }
   
   
-  em {
-      color: blueviolet;
-    }
-
   @media (min-width: 50em) {
     .author {
       flex-direction: row;
@@ -85,22 +85,20 @@ import SocialList from './SocialList.astro';
     text-align: left;
     font-size: 14px;
   }
-
-   
     
   }
 </style>
 
 <div class="author">
   <div class="author-bio">
-    <h1 class="author-name">hi <em>.</em> i'm jeff 👋</h1>  
-    <p class="author-desc">Web Developer <em>/</em> SEO Specialist <em>/</em> Content Writer<em>.</em> Currently working @  <a href="https://webdevpl.us/"> Webdev+</a> </p>
-    <p class="hire">Writing with <a href="https://daringfireball.net/projects/markdown/">@Markdown</a> and Building websites with&nbsp; <a href="https://jamstack.org/generators/" rel="nofollow">@Jamstack</a> </p>
-    <p class="hire">Available for hire <em><strong>↓↓</strong></em></p>
+    <h1 class="author-name">{hi}</h1>  
+    <p class="author-desc"> {authordesc}</p>
+    <p class="hire">{subdesc}</p>
+    <p class="hire">{forhire}</p>
     <SocialList size="lg" />
   </div>
   <div class="author-picture">
-    <img src="/assets/profile.jpg" class="profile-pic"  alt="Profile"/>
+    <img src="{pic}" class="profile-pic"  alt="profile"/>
   </div>
 </div>
 

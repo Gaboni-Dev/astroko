@@ -3,18 +3,10 @@ import Author from '../components/Author.astro'
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 
-
-// import BlogFooter from '../components/BlogFooter.astro';
-
-
 let title = 'Jeff Gaboni - Web Developer | SEO Specialist | Content Writer';
 let description = 'Web Developer | SEO Specialist | Content Writer';
 let permalink = 'https://www.jeffgaboni.com';
- 
-
-
-
- 
+let footquote = 'Silence is golden  <em>Anonymous</em>';
 
 ---
 <html lang="en">
@@ -65,7 +57,7 @@ let permalink = 'https://www.jeffgaboni.com';
   }
       
 
-      .content :global(main > * + *) {
+  .content :global(main > * + *) {
         margin-top: 1rem;
       }
 
@@ -111,9 +103,9 @@ let permalink = 'https://www.jeffgaboni.com';
       </article>
     </div>
     <div class="foot">
-  Silence is golden  <em>Anonymous</em>
+ {footquote}
 
 </div>
-    <!-- <BlogFooter /> -->
+    
   </body>
 </html>

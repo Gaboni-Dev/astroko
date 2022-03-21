@@ -3,10 +3,11 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import BlogFooter from '../components/BlogFooter.astro';
 
-
 let title = '404';
 let description = 'Web Developer | SEO Specialist';
 let permalink = 'https://www.jeffgaboni.com';
+let error = 'Lost in space, astronaut? 🤦';
+let errordesc = 'We couldn’t find the page you were looking for—let’s get you back to <a href="/">Home</a>';
 
  
 
@@ -59,8 +60,8 @@ let permalink = 'https://www.jeffgaboni.com';
     <Header />
     <div class="layout">
       <article class="content">
-    <center><h1 class="about">Lost in space, astronaut? 🤦</h1>
-We couldn’t find the page you were looking for—let’s get you back to <a href="/">Home</a></center> 
+    <center><h1 class="about">{error}</h1>
+{errordesc}</center> 
       </article>
     </div>
     <BlogFooter />

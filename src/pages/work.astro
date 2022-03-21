@@ -1,15 +1,17 @@
 ---
-import Author from '../components/Author.astro'
+ 
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import BlogFooter from '../components/BlogFooter.astro';
-import Work from '../components/Work.astro';
+ 
 import ProjectPreview from '../components/ProjectPreview.jsx';
 
-let title = 'Jeff Gaboni - Web Developer | SEO Specialist | Content Writer';
+let title = 'Projects';
 let description = 'Web Developer | SEO Specialist | Content Writer';
 let permalink = 'https://www.jeffgaboni.com';
- 
+let hire = 'Available for hire';
+let webdevplus = 'Webdev+';
+let currentlyworkingat = 'Currently working @';
 
  
 let allProjects = Astro.fetchContent('./projects/*.md');
@@ -53,11 +55,7 @@ const featuredProjects = allProjects.filter(projects => {
       font-size: x-small;
       margin-left: 10px;
      }
-    
-
-     
-      
-
+  
       .content :global(main > * + *) {
         margin-top: 1rem;
       }
@@ -89,15 +87,113 @@ const featuredProjects = allProjects.filter(projects => {
           margin-top: 4rem;
         }
       }
-    </style>
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+  .projects-container {
+    width: 100%;
+  }
+
+  .projects-name {
+    margin: 0;
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  .projects-desc { 
+    font-family: Montserrat,sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+
+  .hire {
+    
+    font-family: Montserrat,sans-serif;
+    font-size: 24px;
+  }
+  .forhire {
+    
+    font-size: 14px;
+    margin-bottom: 20px;
+    
+  }
+
+
+  .projects-picture {
+    width: 175px;
+    order: -1;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  .profile-pic {
+    min-width: 175px;
+    min-height: 175px;
+    border: 4px solid var(--color-gray-400);
+    border-radius: 50%;
+  }
+  
+  
+  em {
+      color: blueviolet;
+      font-family: Montserrat,sans-serif;
+      font-size: 24px;
+    }
+
+  @media (min-width: 50em) {
+    .projects {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .projects-container {
+      width: 75%;
+    }
+
+    .projects-name,
+    .projects-desc {
+      
+      margin-bottom: 15px;
+    }
+
+    .projects-picture {
+      margin-left: 36px;
+      order: 1;
+      
+    }
+ 
+   
+    
+  }
+
+ </style>
   </head>
 
   <body>
     <Header />
+    
+    
     <div class="layout">
       <article class="content">
         <section class="tile">
-          <Work />
+        <div class="projects">
+  <div class="projects-container">
+   
+    
+    <p class="hire">  {currentlyworkingat}  <a href="{permalink}"> {webdevplus}</a> </p>
+    <p class="forhire">{hire} <em>.</em></p>
+  
+     <h1 class="projects-name">{title} <em>.</em>👋</h1>  
+  </div>
+ 
+</div>
         </section>
          <section class="tile">
           <div class="tile-header-wrapper">
