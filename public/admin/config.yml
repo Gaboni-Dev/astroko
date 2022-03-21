@@ -11,6 +11,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "src/pages/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     preview_path: blog/{{slug}}
+    show_preview_links: true
     fields: # The fields each document in this collection have
       - {
           label: "Layout",
@@ -27,7 +28,12 @@ collections: # A list of collections the CMS should be able to edit
           widget: "boolean",
           default: true,
         }
-      - { label: "Featued", name: "featured", widget: "boolean", default: true }
+      - {
+          label: "Featured",
+          name: "featured",
+          widget: "boolean",
+          default: true,
+        }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Category", name: "category", widget: "list" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
