@@ -3,6 +3,7 @@ layout: ../../layouts/BlogPost.astro
 featured: true
 title: Best Properties
 description: Wordpress CMS Real Estate website built with Wordpress
+role: Developer / Maintainer
 image: /images/uploads/project-bestproperties.png
 website: https://bestproperties.ph/
 published: true

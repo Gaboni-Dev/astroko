@@ -24,10 +24,13 @@ function ProjectPreview(props) {
           <header>
             <div className="title">
               {" "}
-              <a href={projects.website}>{projects.title}</a>
+              <a href={projects.website} target="_blank">
+                {projects.title}
+              </a>
             </div>
           </header>{" "}
           <p>{projects.description}</p>
+          <p className="role">{projects.role}</p>
         </div>
         <div className="post-image">
           {projects?.image && <img src={projects.image} />}

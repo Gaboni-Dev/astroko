@@ -3,6 +3,7 @@ layout: ../../layouts/BlogPost.astro
 featured: true
 title: Watch With
 description: Web app to play local video files and youtube videos in sync with your friends for a great movie night! Built with Nuxt and Socket
+role: Developer
 image: /images/uploads/watchwith.png
 website: https://watchwith.xyz/
 published: true
