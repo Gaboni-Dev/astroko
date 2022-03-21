@@ -27,7 +27,7 @@ function ProjectPreview(props) {
               <a href={projects.website}>{projects.title}</a>
             </div>
           </header>{" "}
-          <em>{projects.description}</em>
+          <p>{projects.description}</p>
         </div>
         <div className="post-image">
           {projects?.image && <img src={projects.image} />}
