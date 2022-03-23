@@ -4,7 +4,7 @@ featured: true
 title: WebDev+
 description: Web Design Agency website built with Jekyll Deployed with Github Action and hosted on Netlify
 role: Developer  / Designer
-image: /images/uploads/wedevplus.png
+image: /images/uploads/webdevplus.png
 website: https://www.wedevpl.us
 published: true
 tags:
