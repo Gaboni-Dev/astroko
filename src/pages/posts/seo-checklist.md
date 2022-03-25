@@ -57,7 +57,7 @@ A list of best practices and reminders that helps me optimize a website to perfo
 
 ### **Technical SEO**
 
-=======
+
 
 - Set up GSC and Bing Webmaster tools
 - Set up Google Analytics
@@ -97,31 +97,8 @@ A list of best practices and reminders that helps me optimize a website to perfo
 
 <br/><br/><hr/><br/><br/>
 
-### **Technical SEO**
 
-- Leverage "Inspect URL" feature in GSC
-- Ensure your website is mobile-friendly
-- Check your site's loading speed
-- Make sure you are using HTTPS
-- Find and fix crawl errors
-- Check the page depth
-- Check for duplicate versions of your site
-- Identify and fix broken links
-- Use an SEO-friendly URL structure
-- Find and fix orphaned pages
-- Check canonical tags
-- Add structured data
 
-**Tools**
-
-- GSC and GA
-- [PageSpeed Insights](https://pagespeed.web.dev/)
-- [Google's Mobile-Friendly test](https://search.google.com/test/mobile-friendly)
-- Site Audit
-- [Structured Data Markup Helper](https://support.google.com/webmasters/answer/3069489?hl=en)
-- [Merkle Schema Markup Generator](https://technicalseo.com/tools/schema-markup-generator/)
-
-<br/><br/><hr/><br/><br/>
 
 ### **On-Page and Content**
 
