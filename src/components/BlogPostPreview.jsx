@@ -1,6 +1,5 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoePrints } from "@fortawesome/free-solid-svg-icons";
 
 import TagList from "./TagList.jsx";
 
@@ -31,8 +30,7 @@ function BlogPostPreview(props) {
         <main>
           <p>{post.description}</p>
           <a href={post.url} className="read-more">
-            Read >
-            {/* <FontAwesomeIcon icon={faShoePrints} className="footprints" /> */}
+            Read more
           </a>
         </main>
       </div>

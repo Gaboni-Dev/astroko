@@ -4,9 +4,15 @@ import Header from '../components/Header.astro';
 import BlogFooter from '../components/BlogFooter.astro';
 import PostList from '../components/PostList.jsx';
 
-let title = 'Jeff Gaboni - Web Developer | SEO Specialist | Content Writer';
-let description = 'Web Developer | SEO Specialist';
-let permalink = 'https://gaboni.dev/';
+ 
+ 
+
+let title = 'Notes  &#9996;';
+let description = 'It’s a nice reminder for myself, when I’m feeling unfocused  ❤️';
+let permalink = 'https://www.jeffgaboni.com';
+
+ 
+ 
 
 let allPosts = [];
 allPosts = await Astro.fetchContent('./posts/*.md');
@@ -42,13 +48,88 @@ allPosts = allPosts.filter(post => post.published).sort((a, b) => new Date(b.pub
       .content :global(main > * + *) {
         margin-top: 1rem;
       }
+
+      
+
+  .post-container {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .post-name {
+    margin: 0;
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  .post-desc { 
+    font-family: Montserrat,sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+
+  .desc {
+    
+    font-family: Montserrat,sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+
+ 
+
+ 
+  
+  
+  
+
+  @media (min-width: 50em) {
+    .post {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .post-container {
+      width: 75%;
+      margin-bottom: 50px;
+    }
+
+    .post-name,
+    .post-desc {
+      
+      margin-bottom: 15px;
+    }
+
+    .post-picture {
+      margin-left: 36px;
+      order: 1;
+      
+    }
+ 
+
+  }
     </style>
   </head>
 
   <body>
     <Header />
     <div class="layout">
+     
       <article class="content">
+      <section class="tile">
+        <div class="post">
+           <div class="post-container">
+            
+                  <h1 class="post-name">{title} <em>.</em></h1>  
+                  <p class="desc">  {description}   </p>
+         
+             
+           </div>
+ 
+         </div>
+        </section>
         { allPosts.length && <PostList posts={allPosts} client:load /> }
       </article>
     </div>

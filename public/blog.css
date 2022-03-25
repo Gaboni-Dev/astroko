@@ -95,6 +95,20 @@ em {
   --max-width: calc(100% - 2rem);
 }
 
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+  background-color: var(--color-gray-400);
+  color: var(--theme-text);
+  padding: 0.5rem 1rem;
+}
+td {
+  border: 1px dotted #ddd;
+  padding: 0.5rem 1rem;
+}
+
 @media (min-width: 50em) {
   :root {
     --max-width: 40em;
