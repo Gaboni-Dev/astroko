@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BlogPost.astro
-title: SEO Checklist
-description: A list of best practices and reminders that help you optimize a
+title: My SEO Checklist
+description: A list of best practices and reminders that helps me optimize a
   website to perform better in search engine rankings
 image: /images/uploads/seo-checklist.png
 published: true
@@ -13,7 +13,7 @@ category:
 date: 2022-03-24T02:16:34.764Z
 publishDate: 2022-3-24
 ---
-A list of best practices and reminders that help you optimize a website to perform better in search engine rankings
+A list of best practices and reminders that helps me optimize a website to perform better in search engine rankings
 
 
 
