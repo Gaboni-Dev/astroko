@@ -35,29 +35,7 @@ A list of best practices and reminders that helps me optimize a website to perfo
 
 <br/><br/><hr/><br/><br/>
 
-### **Keyword Research**
-
-- Identify your competitors
-- Conduct a keyword gap analysis
-- Find your main 'money' keywords
-- Find long-tail keyword variations
-- Find question keywords
-- Analyze the intent of pages that rank
-- Create a keyword map
-- Prioritize by search volume and keyword difficulty |
-
-**Tools**
-
-- Keyword Magic Tool
-- Keyword Gap Tool
-- [Google Ads](https://ads.google.com/home/)
-- Topic Research
-
-<br/><br/><hr/><br/><br/>
-
 ### **Technical SEO**
-
-
 
 - Set up GSC and Bing Webmaster tools
 - Set up Google Analytics
@@ -91,14 +69,11 @@ A list of best practices and reminders that helps me optimize a website to perfo
 
 - [PageSpeed Insights](https://pagespeed.web.dev/)
 - [Google's Mobile-Friendly test](https://search.google.com/test/mobile-friendly)
-- Site Audit |
+- Site Audit
 - [Structured Data Markup Helper](https://support.google.com/webmasters/answer/3069489?hl=en)
 - [Merkle Schema Markup Generator](https://technicalseo.com/tools/schema-markup-generator/)
 
 <br/><br/><hr/><br/><br/>
-
-
-
 
 ### **On-Page and Content**
 
