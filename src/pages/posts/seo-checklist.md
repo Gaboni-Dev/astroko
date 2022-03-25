@@ -13,6 +13,9 @@ category:
 date: 2022-03-24T02:16:34.764Z
 publishDate: 2022-3-24
 ---
+A list of best practices and reminders that help you optimize a website to perform better in search engine rankings
+
+
 
 ### **SEO Basics**
 
