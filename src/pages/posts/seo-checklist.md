@@ -1,10 +1,11 @@
 ---
 layout: ../../layouts/BlogPost.astro
-featured: true
 title: SEO Checklist
-description: A list of best practices and reminders that help you optimize a website to perform better in search engine rankings
+description: A list of best practices and reminders that help you optimize a
+  website to perform better in search engine rankings
 image: /images/uploads/seo-checklist.png
 published: true
+featured: true
 tags:
   - SEO
 category:
@@ -23,12 +24,15 @@ publishDate: 2022-3-24
 - Check Search Console for manual actions
 - Make sure that your website is indexed
 
-#### **SEO Basics Tools**
+**Tools**
 
 - [Google Search Console](https://search.google.com/search-console/about)
 - [Google Analytics](https://analytics.google.com/)
 - [Bing Webmaster Tools](https://www.bing.com/webmaster/tools)
 - [Yoast](https://yoast.com/)
+
+
+<br/><br/><hr/><br/><br/>
 
 ### **Keyword Research**
 
@@ -41,12 +45,14 @@ publishDate: 2022-3-24
 - Create a keyword map
 - Prioritize by search volume and keyword difficulty
 
-#### **Keyword Research Tools**
+**Tools**
 
 - Keyword Magic Tool
 - Keyword Gap Tool
 - [Google Ads](https://ads.google.com/home/)
 - Topic Research
+
+<br/><br/><hr/><br/><br/>
 
 ### **Technical SEO**
 
@@ -58,12 +64,12 @@ publishDate: 2022-3-24
 - Check the page depth
 - Check for duplicate versions of your site
 - Identify and fix broken links
-- Use an SEO-friendly URL structur
+- Use an SEO-friendly URL structure
 - Find and fix orphaned pages
 - Check canonical tags
 - Add structured data
 
-#### **Technical SEO Tools**
+**Tools**
 
 - GSC and GA
 - [PageSpeed Insights](https://pagespeed.web.dev/)
@@ -71,6 +77,8 @@ publishDate: 2022-3-24
 - Site Audit
 - [Structured Data Markup Helper](https://support.google.com/webmasters/answer/3069489?hl=en)
 - [Merkle Schema Markup Generator](https://technicalseo.com/tools/schema-markup-generator/)
+
+<br/><br/><br/><br/>
 
 ### **On-Page and Content**
 
@@ -85,6 +93,10 @@ publishDate: 2022-3-24
 - Update outdated content
 - Improve content readability
 
+
+<br/><br/><hr/><br/><br/>
+
+
 ### **Off-Page SEO**
 
 - Analyze your competitor's link profile
@@ -95,7 +107,7 @@ publishDate: 2022-3-24
 - Turn unlinked mentions into links
 - Set up and optimize Google Business Profile
 
-#### **Off-Page SEO Tools**
+**Tools**
 
 - Backlink Audit
 - Backlink Analytics
