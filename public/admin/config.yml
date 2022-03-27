@@ -45,7 +45,12 @@ collections: # A list of collections the CMS should be able to edit
     folder: "src/projects" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - { label: "Layout", name: "layout", widget: "hidden", default: "../layouts/BlogPost.astro",}
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "../layouts/BlogPost.astro",
+        }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Description", name: "description", widget: "text" }
@@ -53,4 +58,4 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Website", name: "website", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown" }
