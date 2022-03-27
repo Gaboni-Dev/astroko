@@ -58,4 +58,4 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Role", name: "role", widget: "text" }
       - { label: "Website", name: "website", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: "code" }
-      - { label: "Category", name: "category", widget: "text", default: "web3" }
+      - { label: "Category", name: "category", widget: "list", default: "web3" }
