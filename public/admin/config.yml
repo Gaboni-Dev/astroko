@@ -53,3 +53,9 @@ collections: # A list of collections the CMS should be able to edit
         }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description", name: "description". "widget: "text" }
+      - { label: "Role", name: "role", widget: "text"}
+      - { label: "Website", name: "website", widegt: "text" }
+      - { label: "Tags", name: "tags", widget: "list"}
+      - { label: "Category", name: "category", widget: "text"}
