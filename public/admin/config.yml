@@ -36,13 +36,13 @@ collections: # A list of collections the CMS should be able to edit
           default: true,
         }
       - { label: "Tags", name: "tags", widget: "list" }
-      - { label: "Category", name: "category", widget: "list" }
+      - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "pages" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Pages" # Used in the UI, ie.: "New Post"
-    folder: "src/pages" # The path to the folder where the documents are stored
+  - name: "projects" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Projects" # Used in the UI, ie.: "New Post"
+    folder: "src/projects" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {
@@ -52,4 +52,10 @@ collections: # A list of collections the CMS should be able to edit
           default: "../layouts/BlogPost.astro",
         }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Role", name: "role", widget: "text" }
+      - { label: "Website", name: "website", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+       - { label: "Body", name: "body", widget: "markdown" }
