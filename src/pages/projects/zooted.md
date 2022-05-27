@@ -5,7 +5,7 @@ title: Zooted
 description: CMS (netlify cms) website built with Jekyll Deployed with Github Action and hosted on Netlify
 role: Developer / Optimization
 image: /images/uploads/zooted.png
-website: https://www.zooted.me
+website:
 published: true
 tags:
   - code
