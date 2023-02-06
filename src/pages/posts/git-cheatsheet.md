@@ -1,10 +1,11 @@
 ---
 layout: ../../layouts/BlogPost.astro
-featured: true
 title: My Git Cheatsheet
-description: When I collaborate with others using Git, I frequently have to use Google to locate the appropriate git commands for different scenarios.
+description: When I collaborate with others using Git, I frequently have to use
+  Google to locate the appropriate git commands for different scenarios.
 image: /images/uploads/git-cheatsheet.png
 published: true
+featured: true
 tags:
   - code
   - git
@@ -13,48 +14,35 @@ category:
 date: 2022-02-24T02:16:34.764Z
 publishDate: 2019-11-20
 ---
-
 When I collaborate with others using Git, I frequently have to use Google to locate the appropriate git commands for different scenarios.
 
 So, in order for me (and perhaps others) to remember and use these, I decided to write them down in one place as a helpful cheatsheet.
 
 ### Jargon
 
-- `remote` - remote means server like github, bitbucket, etc.
-
-- `local` - your git repo stored in PC
-
-- `remote repository` - your git repo stored on github, bitbucket, etc.
-
-- `origin` - origin is _your_ remote repo (from where you did `git clone`)
-
-- `upstream` - upstream is _their_ main repo (from which you have forked, useful to get latest changes from _their_ repo releases)
-
-- `tag` - you can create a tag when doing software releases
-
-- `main` - it's the head branch named `main` (default created branch for any new repo, earlier it was used to be `master`)
-
-- `HEAD` - head always refers to the latest commit on your current branch.
-
-- `fetch` - just download latest changes from a `remote` branch in separate path and do not integrate with your repo. `git merge` is required to integrate these changes
-
-- `pull` - means getting latest changes from a remote branch into your branch (`git pull` = `git fetch` + `git merge`)
+* `remote` - remote means server like github, bitbucket, etc.
+* `local` - your git repo stored in PC
+* `remote repository` - your git repo stored on github, bitbucket, etc.
+* `origin` - origin is *your* remote repo (from where you did `git clone`)
+* `upstream` - upstream is *their* main repo (from which you have forked, useful to get latest changes from *their* repo releases)
+* `tag` - you can create a tag when doing software releases
+* `main` - it's the head branch named `main` (default created branch for any new repo, earlier it was used to be `master`)
+* `HEAD` - head always refers to the latest commit on your current branch.
+* `fetch` - just download latest changes from a `remote` branch in separate path and do not integrate with your repo. `git merge` is required to integrate these changes
+* `pull` - means getting latest changes from a remote branch into your branch (`git pull` = `git fetch` + `git merge`)
   To pull from your remote branch: `git pull`
 
   To pull from remote `main` branch: `git pull origin main`
-
-- `commit` - means adding a record entry of your changes e.g. `git commit -m "added feature X"`
-
-- `push` - means uploading your local `commits` to a remote server.
+* `commit` - means adding a record entry of your changes e.g. `git commit -m "added feature X"`
+* `push` - means uploading your local `commits` to a remote server.
   To push commits to your remote branch: `git push`
   To push commits to remote `main` branch: `git push origin main`
-
-- `merge conflict` - when you make changes to a file and someone else make some other changes to the same file and along the same line numbers you get merge conflict. Happens often during `pull`/`push` or merging a `PR`.
+* `merge conflict` - when you make changes to a file and someone else make some other changes to the same file and along the same line numbers you get merge conflict. Happens often during `pull`/`push` or merging a `PR`.
 
 ## Git workflows
 
-- Option A: Clone main repo -> create a new branch -> do your thing -> send PR to `main` branch
-- Option B: Fork from the main repo -> do your thing -> send PR
+* Option A: Clone main repo -> create a new branch -> do your thing -> send PR to `main` branch
+* Option B: Fork from the main repo -> do your thing -> send PR
 
 ### Commit specification
 
@@ -64,17 +52,17 @@ Lint commit messages using [commitlint](https://github.com/conventional-changelo
 
 Benefits:
 
-- Automatically generating CHANGELOGs.
-- Automatically determining a semantic version bump (based on the types of commits landed).
-- Communicating the nature of changes to teammates, the public, and other stakeholders.
-- Triggering build and publish processes.
+* Automatically generating CHANGELOGs.
+* Automatically determining a semantic version bump (based on the types of commits landed).
+* Communicating the nature of changes to teammates, the public, and other stakeholders.
+* Triggering build and publish processes.
 
 Syntax (v1.0.0):
 
-- `fix:` a commit of the type fix patches a bug in your codebase (this correlates with PATCH in Semantic Versioning). ex: `fix: prevent racing of requests`
-- `feat:` a commit of the type feat introduces a new feature to the codebase (this correlates with MINOR in Semantic Versioning). ex: `feat: allow provided config object to extend other configs`
-- `!:` appends a ! after the type/scope, introduces a breaking API change (correlating with MAJOR in Semantic Versioning). ex: `feat!: send an email to the customer when a product is shipped` , `chore!: drop support for Node 6`
-- types other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) recommends `build:`, `chore:`, `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
+* `fix:` a commit of the type fix patches a bug in your codebase (this correlates with PATCH in Semantic Versioning). ex: `fix: prevent racing of requests`
+* `feat:` a commit of the type feat introduces a new feature to the codebase (this correlates with MINOR in Semantic Versioning). ex: `feat: allow provided config object to extend other configs`
+* `!:` appends a ! after the type/scope, introduces a breaking API change (correlating with MAJOR in Semantic Versioning). ex: `feat!: send an email to the customer when a product is shipped` , `chore!: drop support for Node 6`
+* types other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) recommends `build:`, `chore:`, `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
 
 ## Add local git repo to Github
 
@@ -120,7 +108,7 @@ git commit --reuse-message=HEAD
 
 #### Git add+commit
 
-- It also adds newly created files
+* It also adds newly created files
 
 ```
 git add -A ; git commit -m "Your Message" (powershell)
@@ -151,8 +139,6 @@ git push origin HEAD (push local changes to remote branch with same name)
 git pull origin main (pull latest changes from remote main branch into local dev branch)
 ```
 
-####
-
 ## Remove untracked files from local and remote
 
 1. add those files to `.gitignore`
@@ -165,19 +151,16 @@ git pull origin main (pull latest changes from remote main branch into local dev
 
 ### create PR inside VSCode
 
-- CLI: `gh pr create --fill` (need to install [Github CLI](https://cli.github.com/))
-
-- GUI: use VSCode extension: [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
-
-- Github:
+* CLI: `gh pr create --fill` (need to install [Github CLI](https://cli.github.com/))
+* GUI: use VSCode extension: [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+* Github:
 
   1. Visit repo on github.com and switch to your branch.
-
   2. Go to `Pull requests` section -> `New pull request`
 
 ### List PRs
 
-- `gh pr list`
+* `gh pr list`
 
 ### See all changes from a PR as uncommitted changes
 
@@ -192,7 +175,7 @@ Option A:
 
 Option B:
 
-- Install VSCode extension: [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github).
+* Install VSCode extension: [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github).
 
 ## Branch
 
@@ -276,7 +259,7 @@ git remote set-url origin new.git.url
 
 ### get latest from other branch - rebase
 
-- Get all commits from `main` branch into `feature` branch i.e. sync `feature` with `main`
+* Get all commits from `main` branch into `feature` branch i.e. sync `feature` with `main`
 
 1. Start rebase
 
@@ -287,11 +270,10 @@ git rebase origin/main
 
 2. Resolve merge conflicts if any
 
-   1. _accept current changes_ instead of _incoming changes_.
+   1. *accept current changes* instead of *incoming changes*.
    2. once resolved, run `git add .`
    3. continue after resolving merge conflicts `git rebase --continue`
    4. Repeat same steps untill no more merge conflicts
-
 3. Force push and done
 
 ```
@@ -320,25 +302,25 @@ git push origin from_branch:to_branch
 
 ### Git pull without committing local changes
 
-- hide your local uncommitted changes temporarily
+* hide your local uncommitted changes temporarily
 
 ```
 git stash -u (-u means --include-untracked)
 ```
 
-- show all stashes
+* show all stashes
 
 ```
 git stash list
 ```
 
-- get latest changes
+* get latest changes
 
 ```
 git pull
 ```
 
-- now unhide your local uncommitted changes
+* now unhide your local uncommitted changes
   (`pop` will restore only latest stash)
   `git stash pop` or `git stash apply`
 
@@ -382,7 +364,7 @@ git checkout A
 git stash apply (will recover changes from last stack)
 ```
 
-- To see all stashes
+* To see all stashes
   `git stash list`
 
 ### clone uncommitted changes to new branch
@@ -407,7 +389,7 @@ git checkout A
 git stash apply
 ```
 
-- To see all stashes
+* To see all stashes
   `git stash list`
 
 ### Copy specific commit from one branch to another
@@ -416,13 +398,13 @@ Ex: copy one commit from `dev` to `main`
 
 **using gui:**
 
-- switch to `main`: `git checkout main`
-- run `gitk --all`
-- right-click on desired commit and select `Cherry-pick this commit`
+* switch to `main`: `git checkout main`
+* run `gitk --all`
+* right-click on desired commit and select `Cherry-pick this commit`
 
 **using cli:**
 
-- get commit sha1-id you want to copy
+* get commit sha1-id you want to copy
 
 ```
 git checkout dev
@@ -430,7 +412,7 @@ git log (copy desired commit_id)
 (to exit type q)
 ```
 
-- copy commit:
+* copy commit:
 
 ```
 git checkout main
@@ -466,11 +448,11 @@ using gui:
 
 ### Windows
 
-- [Fork](https://git-fork.com/)
+* [Fork](https://git-fork.com/)
 
 ### Mac
 
-- [Fork](https://git-fork.com/)
+* [Fork](https://git-fork.com/)
 
 ### Git interactive commands
 
@@ -484,17 +466,16 @@ git add -i
 git config color.ui true
 ```
 
-## I f\*cked up
+## I f*cked up
 
 ### Switch to an old commit
 
-- Temporarily switch by creating new branch
+* Temporarily switch by creating new branch
 
   ```
   git checkout 0d1d7fc32  (commit id)
   ```
-
-- Revert current branch to an older commit
+* Revert current branch to an older commit
 
   ```
   git reset --hard <commidId> && git clean -f
@@ -502,7 +483,7 @@ git config color.ui true
 
 ### Add new changes to last commit
 
-- If you pushed last commit to remote
+* If you pushed last commit to remote
 
 ```
 git add .
@@ -510,7 +491,7 @@ git commit --amend --no-edit (`--no-edit` to keep last commit msg)
 git push --force
 ```
 
-- If you didn't push the commit to remote
+* If you didn't push the commit to remote
 
 ```
 git reset HEAD^
@@ -520,13 +501,13 @@ Then add all files and commit again
 
 ### Resolve Merge Conflicts
 
-- revert current merge conflicts
+* revert current merge conflicts
 
 ```
 git reset --hard HEAD
 ```
 
-- revert all my changes and pull latest from `main`
+* revert all my changes and pull latest from `main`
 
 ```
 git reset --hard HEAD
@@ -545,10 +526,8 @@ git pull -s recursive -X theirs upstream branch_remote
 
 1. Get that commit to local
    `git pull`
-
 2. Remove commit locally
    `git reset HEAD^`
-
 3. Force-push the last HEAD commit to remote
    `git push origin +HEAD`
 
@@ -647,6 +626,6 @@ git config --system --unset credential.helper
 
 ## Misc
 
-#### markdown cheatsheet
+#### markdown cheatsheets
 
-- [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>
